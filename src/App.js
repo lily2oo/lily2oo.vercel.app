@@ -11,7 +11,7 @@ import About from "./routes/About.jsx";
 
 const App = () => {
   return (
-    <div>
+    <div id='global-container'>
       <Header />
       <Routes>
         <Route path={`/`} element={<Home />} />

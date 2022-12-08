@@ -22,6 +22,12 @@ body {
     font-style: normal;
 }
 
+
+#global-container{
+    width: 100vw;
+    overflow: hidden;
+}
+
 .wrapper {
     width: 100vw;
 }
