@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+@import url("https://use.typekit.net/okr6ijp.css");
+
+@font-face {
+    font-family: "Antro Vectra";
+    src: url("./fonts/Antro_Vectra.otf") format("otf"),
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+    font-size: 62.5%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+    background-color: #FFF5E7;
+    color: #0E5E6F;
+    font-family: josefin-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper {
+    width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+    margin-top: 10vh;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    width: 85%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 30px 0 30px 30px;
+    list-style: none;
+    display: flex;
+}
+
+header a {
+    text-decoration: none;
+    color: #0E5E6F;
+}
+
+header a:hover {
+}
+
+
+.active {
+    color: #000;
+}
+
+/* Home */
+
+#home {
+    position: relative;
+    text-align: center;
+}
+
+#logo {
+    position: absolute;
+    bottom: -5%;
+    left: 1%;
+}
+
+#logo-content {
+    position: relative;
+    mix-blend-mode: exclusion;
+}
+
+#logo p:nth-child(1) {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10rem;
+}
+
+#logo p:nth-child(2) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: inline-block;
+    font-family: "Antro Vectra";
+    font-size: 6rem;
+    transform: rotate(-20deg);
+    transform-origin: center center;
+    white-space: nowrap;
+}
+
+.fv-img {
+    width: 100%;
+}
+
+/* Works */
+
+#works {
+}
+
+#worksFilter{
+    display: flex;
+    justify-content: space-around;
+}
+
+#works_contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Works_content {
+    width: 200px;
+    word-wrap: break-word;
+    margin: 50px 70px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    color: white;
+    position: relative;
+}
+
+.square img {
+    width: 200px;
+    height: 200px;
+}
+
+.square p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
 }
