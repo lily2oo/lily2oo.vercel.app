@@ -5,14 +5,9 @@ const Works_content = ({item}) => {
     <>
       {item.map((Val) => {
         return (
-          <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{id: "id"}}>
-            <div className='Works_content'>
-              <div className="square">
-                <img src={`http://localhost:3000/src/${Val.thumb}`} alt="" />
+          <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{id: "id"}} className='Works-content'>
+                <img src={`${process.env.PUBLIC_URL}/${Val.thumb}`} alt="" />
                 <p>{Val.title}</p>
-              </div>
-              {/* <Works_description image={`${image}`} thumb={`${thumb}`} title={`${title}`} sentence={`${sentence}`} /> */}
-            </div>
           </Link>
         )
       })

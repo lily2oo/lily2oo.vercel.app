@@ -3,18 +3,18 @@ import Data from "./Data"
 
 const WorksFilter = ({ filterItem, setItem, menuItems }) => {
     return (
-        <div id="worksFilter">
-            <button onClick={() => setItem(Data)}>
+        <ul id="worksFilter">
+            <li onClick={() => setItem(Data)}>
                 All
-            </button>
+            </li>
             {menuItems.map((Val, id) => {
                 return (
-                    <button key={id} onClick={() => filterItem(Val)}>
+                    <li key={id} onClick={() => filterItem(Val)}>
                         {Val}
-                    </button>
+                    </li>
                 );
             })}
-        </div>
+        </ul>
     )
 }
 

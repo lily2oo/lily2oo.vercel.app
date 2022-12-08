@@ -8,10 +8,10 @@ const Works_detail = () => {
   console.log(data)
 
   return (
-    <section className="wrapper">
+    <section className="wrapper" id="worksDetail">
       <h1>Works_detail</h1>
       <h2>{data.title}</h2>
-      <img src={data.image} alt="" />
+      <img className='worksDetailImage' src={`${process.env.PUBLIC_URL}/${data.image}`} alt="" />
       <p>{data.sentence}</p>
       <Link to={`/works/`}><p>back to works</p></Link>
     </section>
