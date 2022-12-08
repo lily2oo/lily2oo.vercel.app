@@ -9,6 +9,7 @@ import Prototypes from "./routes/Prototypes.jsx";
 import Persona from './routes/Persona';
 import About from "./routes/About.jsx";
 
+
 const App = () => {
   return (
     <div id='global-container'>
