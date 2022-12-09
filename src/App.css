@@ -1,8 +1,8 @@
 @import url("https://use.typekit.net/okr6ijp.css");
 
 @font-face {
-    font-family: "Antro Vectra";
-    src: url(./fonts/Antro_Vectra.otf) format("otf"),
+    font-family: "Antro";
+    src: url(./fonts/Antro_Vectra.otf) format("opentype");
 }
 
 * {
@@ -103,7 +103,7 @@ header a:hover {}
     top: 50%;
     left: 0;
     display: inline-block;
-    font-family: "Antro Vectra";
+    font-family: "Antro";
     font-size: 6rem;
     transform: rotate(-20deg);
     transform-origin: center center;

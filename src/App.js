@@ -1,5 +1,5 @@
-import './fonts/Antro_Vectra.otf'
 import './App.css';
+import './fonts/Antro_Vectra.otf'
 import Header from './routes/Header';
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home.jsx";
