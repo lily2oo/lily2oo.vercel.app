@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Antro Vectra";
-    src: url("./fonts/Antro_Vectra.otf") format("otf"),
+    src: url("../public/fonts/Antro_Vectra.otf") format("otf"),
 }
 
 * {
