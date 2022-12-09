@@ -23,7 +23,7 @@ body {
 }
 
 
-#global-container{
+#global-container {
     width: 100vw;
 }
 
@@ -125,7 +125,7 @@ header a:hover {}
     z-index: 3;
     position: fixed;
     top: 10vh;
-    left: 10;
+    left: 15vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -137,8 +137,9 @@ header a:hover {}
 #worksFilter li {
     list-style: none;
     background-color: #000;
-    padding: 0 10px;
+    padding-right:10px;
     cursor: pointer;
+    line-height: 1.1;
 }
 
 
@@ -162,12 +163,12 @@ header a:hover {}
 .Works-content:hover {
     transition: 0.2s;
     /* padding-left: 200px; */
-    transform: translate(100px,0);
+    transform: translate(100px, 0);
 }
 
 
 .Works-content img {
-    width: 800px;
+    width: 600px;
     background-color: #000;
 }
 
@@ -184,3 +185,26 @@ header a:hover {}
 }
 
 .worksDetailImage {}
+
+
+/* About */
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    width: 300px;
+}
+#about p {
+    font-size: 1.6rem;
+    width: 400px;
+    margin-left: 100px;
+    word-break: break-all;
+    text-align: justify;
+}
+
+#about .jp{
+    font-size: 1.4rem;
+}

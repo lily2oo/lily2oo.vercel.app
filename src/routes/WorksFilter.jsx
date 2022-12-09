@@ -5,7 +5,7 @@ const WorksFilter = ({ filterItem, setItem, menuItems }) => {
     return (
         <ul id="worksFilter">
             <li onClick={() => setItem(Data)}>
-                All
+                all
             </li>
             {menuItems.map((Val, id) => {
                 return (
