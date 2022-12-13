@@ -27,25 +27,29 @@ const Works = () => {
     );
 };
 
-// 作戦失敗
+function scroll_effect() {
+    const element = document.getElementsByClassName('Works-content');
+    if (!element) return;
 
-// function scroll_effect(){
-//     const element = document.getElementsByClassName('Works-content');
-//     if(!element) return;
+    const scrollY = window.pageYOffset;
+    const windowH = window.innerHeight;
+    var showTiming = 0;
+    for (let i = 0; i < element.length; i++) {
+        let elemClientRect = element[i].getBoundingClientRect();
+        let elemTop = scrollY + elemClientRect.top;
+        let elemBottom = scrollY + elemClientRect.bottom;
+        let elemH = elemBottom -elemTop;
+        if (scrollY > elemTop - windowH + showTiming && element[i].classList.contains('is-selected')) {
+            element[i].classList.remove('is-selected');
+            element[i].children[1].classList.remove('is-show');
+        };
+        if (elemBottom - windowH / 2 + showTiming > scrollY && scrollY > elemTop - windowH / 2 + showTiming && !element[i].classList.contains('is-selected')) {
+            element[i].classList.add('is-selected');
+            element[i].children[1].classList.add('is-show');
+        };
+    };
+};
 
-//     const scrollY = window.pageYOffset;
-//     const windowH = window.innerHeight;
-//     var showTiming = 0;
-//     for(let i = 0; i < element.length; i++){
-//         let elemClientRect = element[i].getBoundingClientRect();
-//         let elemTop = scrollY + elemClientRect.top;
-//         let elemBottom = scrollY + elemClientRect.bottom;
-//         if(elemBottom + elemTop - windowH + showTiming > scrollY > elemTop - windowH + showTiming && !element[i].classList.contains('is-show')){
-//             element[i].classList.add('is-show');
-//         }
-//     };
-// };
-
-// window.addEventListener('scroll', scroll_effect);
+window.addEventListener('scroll', scroll_effect);
 
 export default Works
