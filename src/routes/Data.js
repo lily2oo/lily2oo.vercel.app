@@ -34,7 +34,7 @@ const Data = [
     {
         id :"5",
         category: "movie",
-        image: "images/thumb/worksThumb5png",
+        image: "images/thumb/worksThumb5.png",
         thumb: "images/thumb/worksThumb5.png",
         title: "2001.12.11",
         sentence: "sentence4"
@@ -42,7 +42,7 @@ const Data = [
     {
         id :"6",
         category: "design",
-        image: "images/thumb/worksThumb6png",
+        image: "images/thumb/worksThumb6.png",
         thumb: "images/thumb/worksThumb6.png",
         title: "The Wheel Of My Life",
         sentence: "sentence4"
