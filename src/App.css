@@ -112,6 +112,28 @@ header a:hover {}
 
 .fv-img {
     width: 100%;
+    animation: imgfade 8s infinite;
+    opacity: 0;
+}
+
+@keyframes imgfade {
+	0% {
+		opacity: 0;
+	}
+	
+	25% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+
+	75% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 /* Works */
@@ -119,7 +141,7 @@ header a:hover {}
 #works {
     position: relative;
     overflow: hidden;
-    margin: 200px 0;
+    margin: 50vh 0;
 }
 
 #worksFilter {
@@ -160,23 +182,9 @@ header a:hover {}
 }
 
 .Works-content img {
-    width: 600px;
+    width: 800px;
     background-color: #000;
 }
-
-.Works-content p {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-}
-
-#worksDetail {
-    text-align: center;
-}
-
-.worksDetailImage {}
 
 .upperFilter{
     opacity: 0;
@@ -186,21 +194,69 @@ header a:hover {}
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: #000;
+    transition: 0.5s;
+}
+
+.filter{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
     mix-blend-mode: overlay;
+    background-color: #000;
+}
+
+.Works-content .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: exclusion;
+    line-height: 1;
+    text-align: left;
+}
+
+.Works-content .title{
+    font-size: 2.5rem;
+}
+.Works-content .caption{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+
+
+.border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 80%;
+    width: 100%;
+    border: dashed 1px #FFF5E7;
     transition: 0.5s;
 }
 
 .is-selected {
     transition: 0.5s;
-    /* padding-left: 200px; */
-    transform: translate(100px, 0);
+    /* transform: translate(100px, 0); */
 }
 
 .is-show{
     opacity: 1;
     transition: 0.5s;
 }
+
+#worksDetail {
+    text-align: center;
+}
+
+.worksDetailImage {}
 
 
 /* About */

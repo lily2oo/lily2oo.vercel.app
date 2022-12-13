@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Data from './Data'
 import Works_content from './Works_content.jsx'
 import WorksFilter from "./WorksFilter";
-// MySQLからimportする記述
 
 const Works = () => {
     const [item, setItem] = useState(Data);
@@ -34,6 +33,7 @@ function scroll_effect() {
     const scrollY = window.pageYOffset;
     const windowH = window.innerHeight;
     var showTiming = 0;
+
     for (let i = 0; i < element.length; i++) {
         let elemClientRect = element[i].getBoundingClientRect();
         let elemTop = scrollY + elemClientRect.top;

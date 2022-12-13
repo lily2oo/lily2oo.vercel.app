@@ -4,79 +4,55 @@ const Data = [
         category: "movie",
         image: "images/thumb/worksThumb1.png",
         thumb: "images/thumb/worksThumb1.png",
-        title: "title0",
-        sentence: "sentence0"
+        title: "Aquarium",
+        sentence: "drop"
     },
     {
         id :"2",
-        category: "movie",
+        category: "design",
         image: "images/thumb/worksThumb2.png",
         thumb: "images/thumb/worksThumb2.png",
-        title: "title1",
-        sentence: "sentence1"
+        title: "night in the train.",
+        sentence: "my first work. namecard."
     },
     {
         id :"3",
         category: "design",
         image: "images/thumb/worksThumb3.png",
         thumb: "images/thumb/worksThumb3.png",
-        title: "title2",
-        sentence: "sentence2"
+        title: "future.",
+        sentence: "I decided not to think about my future deeply. "
     },
     {
         id :"4",
         category: "story",
-        image: "images/thumb/worksThumb4png",
+        image: "images/thumb/worksThumb4.png",
         thumb: "images/thumb/worksThumb4.png",
-        title: "title3",
+        title: "witch",
         sentence: "sentence3"
     },
     {
         id :"5",
-        category: "web",
+        category: "movie",
         image: "images/thumb/worksThumb5png",
         thumb: "images/thumb/worksThumb5.png",
-        title: "title4",
+        title: "2001.12.11",
         sentence: "sentence4"
     },
     {
         id :"6",
-        category: "movie",
-        image: "images/thumb/worksThumb1.png",
-        thumb: "images/thumb/worksThumb1.png",
-        title: "title0",
-        sentence: "sentence0"
+        category: "design",
+        image: "images/thumb/worksThumb6png",
+        thumb: "images/thumb/worksThumb6.png",
+        title: "The Wheel Of My Life",
+        sentence: "sentence4"
     },
     {
         id :"7",
-        category: "movie",
-        image: "images/thumb/worksThumb2.png",
-        thumb: "images/thumb/worksThumb2.png",
-        title: "title1",
-        sentence: "sentence1"
-    },
-    {
-        id :"8",
-        category: "design",
-        image: "images/thumb/worksThumb3.png",
-        thumb: "images/thumb/worksThumb3.png",
-        title: "title2",
-        sentence: "sentence2"
-    },
-    {
-        id :"9",
-        category: "story",
-        image: "images/thumb/worksThumb4png",
-        thumb: "images/thumb/worksThumb4.png",
-        title: "title3",
-        sentence: "sentence3"
-    },
-    {
-        id :"10",
         category: "web",
-        image: "images/thumb/worksThumb5png",
-        thumb: "images/thumb/worksThumb5.png",
-        title: "title4",
+        image: "images/thumb/worksThumb7.png",
+        thumb: "images/thumb/worksThumb7.png",
+        title: "SA Exhibition.",
         sentence: "sentence4"
     }
 ];

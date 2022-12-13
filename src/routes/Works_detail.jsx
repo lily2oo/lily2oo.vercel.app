@@ -9,9 +9,8 @@ const Works_detail = () => {
 
   return (
     <section className="wrapper" id="worksDetail">
-      <h1>Works_detail</h1>
       <h2>{data.title}</h2>
-      <img className='worksDetailImage' src={`${process.env.PUBLIC_URL}/${data.image}`} alt="" />
+      <img className='worksDetailImage' src={`/${data.image}`} alt="" />
       <p>{data.sentence}</p>
       <Link to={`/works/`}><p>back to works</p></Link>
     </section>
