@@ -4,30 +4,30 @@ const Home = () => {
   const [count, setCount] = useState(0);
   const countRef = useRef(null);
   countRef.current = count;
-
+  const images = [
+    'images/home/home1.png',
+    'images/home/home2.png',
+  ]
   useEffect(() => {
-    const images = [
-      'images/fv.png',
-      'images/fv2.png',
-    ]
-    const fvImage = document.getElementById("fv-img");
-    function changeImage() {
-      setCount((prevState) => prevState + 1);
-      console.log(countRef.current);
-      if(countRef.current >= images.length -1){
-        setCount(0);
-      }
-      fvImage.src = images[countRef.current];
-    };
     changeImage();
     setInterval(changeImage, 8000);
   }, []);
 
+  function changeImage() {
+    const homeImage = document.getElementById("home__image");
+    setCount((prevState) => prevState + 1);
+    console.log(countRef.current);
+    if(countRef.current >= images.length -1){
+      setCount(0);
+    }
+    homeImage.src = images[countRef.current];
+  };
+
   return (
     <section id="home" className="wrapper">
-      <img id="fv-img" className="fv-img" src="" />
+      <img id="home__image" className="home__image" src="" />
       <div id="logo">
-        <div id="logo-content">
+        <div id="logo__text">
           <p>lily2oo</p>
           <p>Jumpei Suko</p>
         </div>

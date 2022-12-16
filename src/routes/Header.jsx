@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <NavLink activeclassname="active" to={`/`}><p>lily2oo</p></NavLink>
+        <NavLink activeclassname="activePage" to={`/`}><p>lily2oo</p></NavLink>
       </div>
       <nav>
         <ul>

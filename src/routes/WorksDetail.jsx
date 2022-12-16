@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import Data from './Data'
 
-const Works_detail = () => {
+const WorksDetail = () => {
   const {paramsId} = useParams();
   console.log(paramsId)
   const data = Data.find(({ id }) => id === paramsId);
@@ -10,11 +10,11 @@ const Works_detail = () => {
   return (
     <section className="wrapper" id="worksDetail">
       <h2>{data.title}</h2>
-      <img className='worksDetailImage' src={`/${data.image}`} alt="" />
+      <img className='worksDetail__image' src={`/${data.image}`} alt="" />
       <p>{data.sentence}</p>
       <Link to={`/works/`}><p>back to works</p></Link>
     </section>
   )
 }
 
-export default Works_detail
+export default WorksDetail

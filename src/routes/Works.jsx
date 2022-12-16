@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Data from './Data'
-import Works_content from './Works_content.jsx'
+import WorksInner from './WorksInner.jsx'
 import WorksFilter from "./WorksFilter";
 
 const Works = () => {
@@ -18,8 +18,8 @@ const Works = () => {
         <>
             <section id="works">
                 <WorksFilter setItem={setItem} menuItems={menuItems} filterItem={filterItem} />
-                <div id="works-contents">
-                    <Works_content item={item} />
+                <div id="works__wrap">
+                    <WorksInner item={item} />
                 </div>
             </section>
         </>
@@ -27,7 +27,7 @@ const Works = () => {
 };
 
 function scroll_effect() {
-    const element = document.getElementsByClassName('Works-content');
+    const element = document.getElementsByClassName('works__inner');
     if (!element) return;
 
     const scrollY = window.pageYOffset;
@@ -38,14 +38,13 @@ function scroll_effect() {
         let elemClientRect = element[i].getBoundingClientRect();
         let elemTop = scrollY + elemClientRect.top;
         let elemBottom = scrollY + elemClientRect.bottom;
-        let elemH = elemBottom -elemTop;
-        if (scrollY > elemTop - windowH + showTiming && element[i].classList.contains('is-selected')) {
-            element[i].classList.remove('is-selected');
-            element[i].children[1].classList.remove('is-show');
+        if (scrollY > elemTop - windowH + showTiming && element[i].classList.contains('is-active')) {
+            element[i].classList.remove('is-active');
+            element[i].children[1].classList.remove('show');
         };
-        if (elemBottom - windowH / 2 + showTiming > scrollY && scrollY > elemTop - windowH / 2 + showTiming && !element[i].classList.contains('is-selected')) {
-            element[i].classList.add('is-selected');
-            element[i].children[1].classList.add('is-show');
+        if (elemBottom - windowH / 2 + showTiming > scrollY && scrollY > elemTop - windowH / 2 + showTiming && !element[i].classList.contains('is-active')) {
+            element[i].classList.add('is-active');
+            element[i].children[1].classList.add('show');
         };
     };
 };
