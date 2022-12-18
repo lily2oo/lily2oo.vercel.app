@@ -2,7 +2,7 @@ const Data = [
     {
         id :"1",
         category: "movie",
-        image: "images/thumb/worksThumb1.png",
+        image: "https://www.youtube.com/embed/Zs0JoPXo0jQ",
         thumb: "images/thumb/worksThumb1.png",
         title: "Aquarium",
         sentence: "drop"
@@ -34,7 +34,7 @@ const Data = [
     {
         id :"5",
         category: "movie",
-        image: "images/thumb/worksThumb5.png",
+        image: "https://www.youtube.com/embed/WKHJRmad4gI",
         thumb: "images/thumb/worksThumb5.png",
         title: "2001.12.11",
         sentence: "sentence4"
