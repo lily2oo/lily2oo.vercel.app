@@ -2,7 +2,7 @@ const Data = [
     {
         id :"1",
         category: "movie",
-        image: "https://www.youtube.com/embed/Zs0JoPXo0jQ",
+        image: "Zs0JoPXo0jQ",
         thumb: "images/thumb/worksThumb1.png",
         title: "Aquarium",
         sentence: "drop"
@@ -34,7 +34,7 @@ const Data = [
     {
         id :"5",
         category: "movie",
-        image: "https://www.youtube.com/embed/WKHJRmad4gI",
+        image: "WKHJRmad4gI",
         thumb: "images/thumb/worksThumb5.png",
         title: "2001.12.11",
         sentence: "sentence4"
@@ -53,7 +53,8 @@ const Data = [
         image: "images/thumb/worksThumb7.png",
         thumb: "images/thumb/worksThumb7.png",
         title: "SA Exhibition.",
-        sentence: "sentence4"
+        sentence: "sentence4",
+        url: "https://sa-exhibition.com/"
     }
 ];
 
