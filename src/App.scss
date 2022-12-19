@@ -261,10 +261,11 @@ header {
 #worksDetail {
     text-align: center;
 
-    #worksDetail__wrap {
-        #worksDetail__movieWrap{
-            width: 100%;
-            aspect-ratio: 16/9;   
+    #worksDetail__contentWrap {
+        #worksDetail__movieWrap {
+            width: 80%;
+            aspect-ratio: 16/9;
+            margin: 0 auto;
         }
 
         .worksDetail__image {
@@ -284,6 +285,10 @@ header {
                 transition: 0.5s;
             }
         }
+    }
+    #worksDetail__sentence{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 

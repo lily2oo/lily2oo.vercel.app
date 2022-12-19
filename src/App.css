@@ -203,22 +203,27 @@ header nav ul li {
 #worksDetail {
   text-align: center;
 }
-#worksDetail #worksDetail__wrap #worksDetail__movieWrap {
-  width: 100%;
+#worksDetail #worksDetail__contentWrap #worksDetail__movieWrap {
+  width: 80%;
   aspect-ratio: 16/9;
+  margin: 0 auto;
 }
-#worksDetail #worksDetail__wrap .worksDetail__image {
+#worksDetail #worksDetail__contentWrap .worksDetail__image {
   width: 80vw;
   background-color: #000;
 }
-#worksDetail #worksDetail__wrap #worksDetail__webLink .worksDetail__image {
+#worksDetail #worksDetail__contentWrap #worksDetail__webLink .worksDetail__image {
   width: 80vw;
   box-sizing: border-box;
   transition: 0.5s;
 }
-#worksDetail #worksDetail__wrap #worksDetail__webLink:hover .worksDetail__image {
+#worksDetail #worksDetail__contentWrap #worksDetail__webLink:hover .worksDetail__image {
   border: #0E5E6F solid 20px;
   transition: 0.5s;
+}
+#worksDetail #worksDetail__sentence {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* About */
