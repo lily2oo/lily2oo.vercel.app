@@ -263,19 +263,19 @@ header {
 
     #worksDetail__contentWrap {
         #worksDetail__movieWrap {
-            width: 80%;
+            width: 90%;
             aspect-ratio: 16/9;
             margin: 0 auto;
         }
 
         .worksDetail__image {
-            width: 80vw;
+            width: 90vw;
             background-color: #000;
         }
 
         #worksDetail__webLink {
             .worksDetail__image {
-                width: 80vw;
+                width: 90vw;
                 box-sizing: border-box;
                 transition: 0.5s;
             }
@@ -286,9 +286,19 @@ header {
             }
         }
     }
-    #worksDetail__sentence{
-        width: 80%;
-        margin: 0 auto;
+
+    #worksDetail__title {
+        margin-top: 30px;
+    }
+
+    #worksDetail__sentence {
+        width: 60%;
+        margin: 60px auto 30px;
+        font-size: 1.5rem;
+        line-height: 2em;
+        letter-spacing: 0.2em;
+        word-break: break-all;
+        text-align: justify;
     }
 }
 
