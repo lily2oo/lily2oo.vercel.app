@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 const WorksInner = ({ item }) => {
   return (
     <>
+      <img className="works__decoration" src="/images/gear.png" alt="" />
+      <img className="works__decoration" src="/images/gear.png" alt="" />
       {item.map((Val) => {
         return (
           <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{ id: "id" }} className='works__inner'>

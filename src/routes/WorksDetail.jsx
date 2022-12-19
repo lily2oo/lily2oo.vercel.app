@@ -23,8 +23,8 @@ const WorksDetail = () => {
         <img className='worksDetail__image' src={`/${data.image}`} alt="" />
       </div>
       <h2 id='worksDetail__title'>[{data.title}]</h2>
-      <p id='worksDetail__sentence'>{data.sentence.split('\n').map(t => (<>{t}<br/></>))}</p>
-      <Link to={`/works/`}><p>back to works</p></Link>
+      <p id='worksDetail__sentence' className={`${data.lang}`}>{data.sentence.split('\n').map(t => (<>{t}<br/></>))}</p>
+      <Link id='worksDetail__link' to={`/works/`}><p>checkout◁</p></Link>
     </section>
   )
 }
