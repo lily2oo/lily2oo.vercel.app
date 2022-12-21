@@ -41,7 +41,7 @@ a {
   background-color: #0E5E6F;
   mix-blend-mode: difference;
   z-index: 1000;
-  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+  transition: width 0.7s ease, height 0.7s ease, top 0.5s ease, left 0.5s ease;
   transform: translate(0, 0);
   pointer-events: none;
   -webkit-animation: 8s infinite light ease;
@@ -77,6 +77,7 @@ a {
   width: 40px;
   height: 40px;
   background: rgba(205, 114, 113, 0.5);
+  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
 
 .wrapper {
