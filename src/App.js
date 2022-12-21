@@ -20,7 +20,6 @@ const App = () => {
       cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
     });
     let link = document.querySelectorAll('a, .link');
-    console.log(link.length);
     for (var i = 0; i < link.length; i++) {
       link[i].addEventListener('mouseover', function (e) {
         cursor.classList.add('cursor--hover');
@@ -28,6 +27,7 @@ const App = () => {
       link[i].addEventListener('mouseout', function (e) {
         cursor.classList.remove('cursor--hover');
       });
+      cursor.classList.remove('cursor--hover');
     }
     console.log(location.pathname)
   })
