@@ -28,7 +28,7 @@ const PhotosDetail = () => {
     <>
       <section className="wrapper" id="photosDetail">
         <div id='photosDetail__imageWrap'>
-          <img id='photosDetail__image' src={`${data.thumb}`} onClick={() => { changeImage() }} />
+          <img id='photosDetail__image' className='link' src={`${data.thumb}`} onClick={() => { changeImage() }} />
         </div>
         <h2 id='photosDetail__title'>{data.title}</h2>
         <div>
