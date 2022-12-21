@@ -35,12 +35,13 @@ const Works = () => {
             let elemBottom = scrollY + elemClientRect.bottom;
             if (scrollY > elemTop - windowH + showTiming && element[i].classList.contains('is-active')) {
                 element[i].classList.remove('is-active');
-                element[i].children[1].style = 'opacity:0';
                 element[i].children[1].classList.remove('show');
+                element[i].children[2].style = 'display:none';
             };
             if (elemBottom - windowH / 2 + showTiming > scrollY && scrollY > elemTop - windowH / 2 + showTiming && !element[i].classList.contains('is-active')) {
                 element[i].classList.add('is-active');
                 element[i].children[1].classList.add('show');
+                element[i].children[2].style = 'display:block';
             };
         };
     };

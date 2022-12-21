@@ -111,7 +111,7 @@ header nav ul li {
   position: fixed;
   top: 20vh;
   left: 10vw;
-  z-index: 3;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -180,41 +180,21 @@ header nav ul li {
   width: 800px;
   background-color: #000;
 }
-#works #works__wrap .works__inner .works__link {
-  display: none;
-  opacity: 0;
-  transition: 0.5s;
-}
-#works #works__wrap .works__inner .works__link.show {
-  display: block;
-  -webkit-animation: appear 0.5s ease forwards;
-          animation: appear 0.5s ease forwards;
-}
-@-webkit-keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-#works #works__wrap .works__inner .works__link .works__mask {
+#works #works__wrap .works__inner .works__mask {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
   width: 100%;
   height: 100%;
+  opacity: 0;
+  transition: 0.5s;
 }
-#works #works__wrap .works__inner .works__link .works__mask .works__mask-overlay {
+#works #works__wrap .works__inner .works__mask.show {
+  opacity: 1;
+  transition: 0.5s;
+}
+#works #works__wrap .works__inner .works__mask .works__mask-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -225,7 +205,7 @@ header nav ul li {
   mix-blend-mode: overlay;
   transition: 0.5s;
 }
-#works #works__wrap .works__inner .works__link .works__mask .works__mask-textbox {
+#works #works__wrap .works__inner .works__mask .works__mask-textbox {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -235,14 +215,14 @@ header nav ul li {
   line-height: 1;
   text-align: left;
 }
-#works #works__wrap .works__inner .works__link .works__mask .works__mask-textbox .works__mask-ttl {
+#works #works__wrap .works__inner .works__mask .works__mask-textbox .works__mask-ttl {
   font-size: 2.5rem;
 }
-#works #works__wrap .works__inner .works__link .works__mask .works__mask-textbox .works__mask-txt {
+#works #works__wrap .works__inner .works__mask .works__mask-textbox .works__mask-txt {
   font-size: 1.5rem;
   margin-top: 10px;
 }
-#works #works__wrap .works__inner .works__link .works__mask .works__mask-border {
+#works #works__wrap .works__inner .works__mask .works__mask-border {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -252,6 +232,17 @@ header nav ul li {
   width: 100%;
   border: dashed 1px #FFF5EB;
   transition: 0.5s;
+}
+#works #works__wrap .works__inner .works__link {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100vw;
+  height: 150vh;
+  cursor: pointer;
 }
 
 /* worksDetail */
