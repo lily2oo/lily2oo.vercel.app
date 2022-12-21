@@ -10,7 +10,8 @@ const Home = () => {
   ]
   useEffect(() => {
     changeImage();
-    setInterval(changeImage, 8000);
+    const interval = setInterval(changeImage, 8000);
+    return () => clearInterval(interval);
   }, []);
 
   function changeImage() {
