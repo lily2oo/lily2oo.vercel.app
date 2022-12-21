@@ -24,17 +24,18 @@ const Works = () => {
     function scroll_effect() {
         const element = document.getElementsByClassName('works__inner');
         if (!element) return;
-    
+
         const scrollY = window.pageYOffset;
         const windowH = window.innerHeight;
         var showTiming = 0;
-    
+
         for (let i = 0; i < element.length; i++) {
             let elemClientRect = element[i].getBoundingClientRect();
             let elemTop = scrollY + elemClientRect.top;
             let elemBottom = scrollY + elemClientRect.bottom;
             if (scrollY > elemTop - windowH + showTiming && element[i].classList.contains('is-active')) {
                 element[i].classList.remove('is-active');
+                element[i].children[1].style = 'opacity:0';
                 element[i].children[1].classList.remove('show');
             };
             if (elemBottom - windowH / 2 + showTiming > scrollY && scrollY > elemTop - windowH / 2 + showTiming && !element[i].classList.contains('is-active')) {

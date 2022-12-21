@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Data from './Works'
 
@@ -9,33 +9,35 @@ const WorksDetail = () => {
   const isWeb = data.category === "web";
   const isStory = data.category === "story";
   const isDesign = data.category === "design";
+  const navigation = useNavigate();
 
   useEffect(() => {
-    // imgSizeChange();
+    imgSizeChange();
   }, []);
-  
-  const img = new Image();
-  img.src = '/'+data.image;
 
-  img.onload = () => {
-    const size = {
-      width: img.naturalWidth,
-      height: img.naturalHeight,
-    };
-  
-    URL.revokeObjectURL(img.src);
-    console.log(size);
 
-    if (data.category !== "movie") {
-      const img = document.getElementById('worksDetail__image');
-      console.log(size.width);
-      if (size.width <= size.height) {
-        img.className += 'vertically_long';
-      } else if (size.width > size.height) {
-        img.className += 'horizontally_long';
+  function imgSizeChange() {
+    const img = new Image();
+    img.src = '/' + data.image;
+
+    img.onload = () => {
+      const size = {
+        width: img.naturalWidth,
+        height: img.naturalHeight,
+      };
+
+      URL.revokeObjectURL(img.src);
+
+      if (data.category !== "movie") {
+        const img = document.getElementById('worksDetail__image');
+        if (size.width <= size.height) {
+          img.className += 'vertically_long';
+        } else if (size.width > size.height) {
+          img.className += 'horizontally_long';
+        }
       }
-    }
-  };
+    };
+  }
 
   return (
     <section className="wrapper" id="worksDetail">
@@ -48,9 +50,11 @@ const WorksDetail = () => {
           <img id='worksDetail__image' src={`/${data.image}`} alt="" />
         ))}
       </div>
-      <h2 id='worksDetail__title'>[{data.title}]</h2>
-      <p id='worksDetail__sentence' className={`${data.lang}`}>{data.sentence.split('\n').map((t, index) => (<span key={index}>{t}<br /></span>))}</p>
-      <Link id='worksDetail__link' to={`/works/`}><p>checkout◁</p></Link>
+      <h2 id='worksDetail__title'>{data.title}</h2>
+      <div>
+        <p id='worksDetail__sentence' className={`${data.lang}`}>{data.sentence.split('\n').map((t, index) => (<span key={index}>{t}<br /></span>))}</p>
+      </div>
+      <p id='worksDetail__link' onClick={() => { navigation(-1) }}>checkout◁</p>
     </section>
   )
 }
