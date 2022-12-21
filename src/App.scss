@@ -8,6 +8,7 @@
 $baseColor: #FFF5EB;
 $mainColor: #0E5E6F;
 $subColor: #000;
+$complementaryColor: #F19E8D;
 
 
 * {
@@ -17,6 +18,7 @@ $subColor: #000;
 
 html {
     font-size: 62.5%;
+    cursor: none;
 }
 
 body {
@@ -25,12 +27,56 @@ body {
     font-family: josefin-sans, sans-serif;
     font-weight: 300;
     font-style: normal;
+    cursor: none;
+}
+
+a {
+    cursor: none;
 }
 
 
 #global-container {
     width: 100vw;
     overflow: hidden;
+}
+
+.cursor {
+    position: fixed;
+    top: -5px;
+    left: -5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $mainColor;
+    mix-blend-mode: difference;
+    z-index: 1000;
+    transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+    transform: translate(0, 0);
+    pointer-events: none;
+    animation: 8s infinite light ease;
+}
+
+
+@keyframes light {
+    0% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 50%;
+    }
+}
+
+.cursor.cursor--hover {
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background: rgba(205, 114, 113, 0.5);
 }
 
 .wrapper {
@@ -75,7 +121,7 @@ header {
     }
 
     a.active {
-        color: $subColor;
+        color: $complementaryColor;
     }
 
     nav ul {
@@ -157,7 +203,6 @@ header {
             list-style: none;
             background-color: $subColor;
             padding-right: 10px;
-            cursor: pointer;
             line-height: 1.1;
         }
     }
@@ -219,10 +264,11 @@ header {
                 width: 100%;
                 height: 100%;
                 opacity: 0;
-                transition: 0.5s;
+                transition: 0.5s ease;
+
                 &.show {
                     opacity: 1;
-                    transition: 0.5s;
+                    transition: 0.5s ease;
                 }
 
                 .works__mask-overlay {
@@ -232,7 +278,7 @@ header {
                     height: 100%;
                     background-color: $subColor;
                     mix-blend-mode: overlay;
-                    transition: 0.5s;
+                    transition: 0.5s ease;
                 }
 
                 .works__mask-textbox {
@@ -258,17 +304,16 @@ header {
                     height: 80%;
                     width: 100%;
                     border: dashed 1px $baseColor;
-                    transition: 0.5s;
+                    transition: 0.5s ease;
                 }
             }
 
-            .works__link{
+            .works__link {
                 display: none;
                 @include absoluteCenter();
                 z-index: 3;
-                width: 100vw;
-                height: 150vh;
-                cursor: pointer;
+                width: 100%;
+                height: 100%;
             }
         }
     }
@@ -302,7 +347,7 @@ header {
         }
 
         #worksDetail__webLink {
-            transition: 0.2s;
+            transition: 0.5s ease;
 
             #worksDetail__image {
                 width: 90vw;
@@ -311,7 +356,7 @@ header {
 
             &:hover #worksDetail__image {
                 border: #0E5E6F solid 5px;
-                transition: 0.5s;
+                transition: 0.5s ease;
             }
         }
     }
@@ -345,13 +390,20 @@ header {
 
 
     #worksDetail__link {
+        padding: 2px;
         display: inline-block;
         text-decoration: none;
-        font-size: 2.6rem;
+        font-size: 2rem;
         color: $mainColor;
-        background-color: $subColor;
-        cursor: pointer;
+        border: 1px solid $mainColor;
         line-height: 1.1;
+        transition: 0.5s ease;
+    }
+
+
+    #worksDetail__link:hover {
+        background-color: $subColor;
+        transition: 0.5s ease;
     }
 }
 
@@ -365,7 +417,7 @@ header {
     flex-wrap: wrap;
 
     .photos__inner {
-        margin: 100px 30px;
+        margin: 100px 40px;
         padding: 0;
         // background-color: $subColor;
 
@@ -417,15 +469,14 @@ header {
         font-size: 2rem;
         color: $mainColor;
         border: 1px solid $mainColor;
-        cursor: pointer;
         line-height: 1.1;
-        transition: 0.2s;
+        transition: 0.5s ease;
     }
 
 
     #photosDetail__link:hover {
         background-color: $subColor;
-        transition: 0.2s;
+        transition: 0.5s ease;
     }
 }
 
@@ -434,20 +485,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#about img {
-    width: 300px;
-}
-
-#about p {
-    font-size: 1.6rem;
-    width: 400px;
-    margin-left: 100px;
-    word-break: break-all;
-    text-align: justify;
-}
-
-#about span {
-    font-size: 1.4rem;
+    img {
+        width: 300px;
+    }
+    p {
+        font-size: 1.6rem;
+        width: 400px;
+        margin-left: 100px;
+        word-break: break-all;
+        text-align: justify;
+    }
+    span {
+        font-size: 1.4rem;
+    }    
 }

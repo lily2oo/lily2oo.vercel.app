@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  cursor: none;
 }
 
 body {
@@ -18,11 +19,64 @@ body {
   font-family: josefin-sans, sans-serif;
   font-weight: 300;
   font-style: normal;
+  cursor: none;
+}
+
+a {
+  cursor: none;
 }
 
 #global-container {
   width: 100vw;
   overflow: hidden;
+}
+
+.cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #0E5E6F;
+  mix-blend-mode: difference;
+  z-index: 1000;
+  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
+  transform: translate(0, 0);
+  pointer-events: none;
+  -webkit-animation: 8s infinite light ease;
+          animation: 8s infinite light ease;
+}
+
+@-webkit-keyframes light {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+.cursor.cursor--hover {
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(205, 114, 113, 0.5);
 }
 
 .wrapper {
@@ -52,7 +106,7 @@ header a {
   color: #0E5E6F;
 }
 header a.active {
-  color: #000;
+  color: #F19E8D;
 }
 header nav ul {
   display: flex;
@@ -123,7 +177,6 @@ header nav ul li {
   list-style: none;
   background-color: #000;
   padding-right: 10px;
-  cursor: pointer;
   line-height: 1.1;
 }
 #works #works__wrap {
@@ -188,11 +241,11 @@ header nav ul li {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 #works #works__wrap .works__inner .works__mask.show {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 #works #works__wrap .works__inner .works__mask .works__mask-overlay {
   position: absolute;
@@ -203,7 +256,7 @@ header nav ul li {
   height: 100%;
   background-color: #000;
   mix-blend-mode: overlay;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 #works #works__wrap .works__inner .works__mask .works__mask-textbox {
   position: absolute;
@@ -231,7 +284,7 @@ header nav ul li {
   height: 80%;
   width: 100%;
   border: dashed 1px #FFF5EB;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 #works #works__wrap .works__inner .works__link {
   display: none;
@@ -240,9 +293,8 @@ header nav ul li {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
-  width: 100vw;
-  height: 150vh;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
 }
 
 /* worksDetail */
@@ -266,7 +318,7 @@ header nav ul li {
   width: 90vw;
 }
 #worksDetail #worksDetail__contentWrap #worksDetail__webLink {
-  transition: 0.2s;
+  transition: 0.5s ease;
 }
 #worksDetail #worksDetail__contentWrap #worksDetail__webLink #worksDetail__image {
   width: 90vw;
@@ -274,7 +326,7 @@ header nav ul li {
 }
 #worksDetail #worksDetail__contentWrap #worksDetail__webLink:hover #worksDetail__image {
   border: #0E5E6F solid 5px;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 #worksDetail #worksDetail__title {
   margin-top: 80px;
@@ -299,13 +351,18 @@ header nav ul li {
   margin-bottom: 80px;
 }
 #worksDetail #worksDetail__link {
+  padding: 2px;
   display: inline-block;
   text-decoration: none;
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #0E5E6F;
-  background-color: #000;
-  cursor: pointer;
+  border: 1px solid #0E5E6F;
   line-height: 1.1;
+  transition: 0.5s ease;
+}
+#worksDetail #worksDetail__link:hover {
+  background-color: #000;
+  transition: 0.5s ease;
 }
 
 /* Photos */
@@ -317,7 +374,7 @@ header nav ul li {
   flex-wrap: wrap;
 }
 #photos__wrap .photos__inner {
-  margin: 100px 30px;
+  margin: 100px 40px;
   padding: 0;
 }
 #photos__wrap .photos__inner .photos__img {
@@ -358,13 +415,12 @@ header nav ul li {
   font-size: 2rem;
   color: #0E5E6F;
   border: 1px solid #0E5E6F;
-  cursor: pointer;
   line-height: 1.1;
-  transition: 0.2s;
+  transition: 0.5s ease;
 }
 #photosDetail #photosDetail__link:hover {
   background-color: #000;
-  transition: 0.2s;
+  transition: 0.5s ease;
 }
 
 /* About */
@@ -373,11 +429,9 @@ header nav ul li {
   justify-content: center;
   align-items: center;
 }
-
 #about img {
   width: 300px;
 }
-
 #about p {
   font-size: 1.6rem;
   width: 400px;
@@ -385,7 +439,6 @@ header nav ul li {
   word-break: break-all;
   text-align: justify;
 }
-
 #about span {
   font-size: 1.4rem;
 }/*# sourceMappingURL=App.css.map */

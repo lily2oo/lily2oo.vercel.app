@@ -34,7 +34,7 @@ const PhotosDetail = () => {
         <div>
           <p id='photosDetail__sentence'>{data.sentence}</p>
         </div>
-        <p id='photosDetail__link' onClick={() => { navigate(-1) }}>checkout◁</p>
+        <p id='photosDetail__link' className='link' onClick={() => { navigate(-1) }}>checkout◁</p>
       </section>
     </>
   )

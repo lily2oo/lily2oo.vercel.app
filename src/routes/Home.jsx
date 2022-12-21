@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <section id="home" className="wrapper">
       <img id="home__image" className="home__image" src="" />
-      <div id="logo">
+      <div className="link" id="logo">
         <div id="logo__text">
           <p>lily2oo</p>
           <p>Jumpei Suko</p>

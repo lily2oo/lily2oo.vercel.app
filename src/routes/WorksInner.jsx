@@ -18,7 +18,7 @@ const WorksInner = ({ item }) => {
               </div>
               <div className="works__mask-border"></div>
             </div>
-            <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{ id: "id" }} id={Val.id} className='works__link'>
+            <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{ id: "id" }} id={Val.id} className='works__link link'>
             </Link>
           </div>
         )

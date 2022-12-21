@@ -9,11 +9,32 @@ import Photos from "./routes/Photos.jsx";
 import PhotosDetail from './routes/PhotosDetail';
 import Persona from './routes/Persona';
 import About from "./routes/About.jsx";
+import useLocationChange from "./fooks/useLocationChange.tsx"
 
 
 const App = () => {
+
+  useLocationChange((location) => {
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', function (e) {
+      cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+    });
+    let link = document.querySelectorAll('a, .link');
+    console.log(link.length);
+    for (var i = 0; i < link.length; i++) {
+      link[i].addEventListener('mouseover', function (e) {
+        cursor.classList.add('cursor--hover');
+      });
+      link[i].addEventListener('mouseout', function (e) {
+        cursor.classList.remove('cursor--hover');
+      });
+    }
+    console.log(location.pathname)
+  })
+
   return (
     <div id='global-container'>
+      <div id='cursor' className='cursor'></div>
       <Header />
       <Routes>
         <Route path={`/`} element={<Home />} />

@@ -54,7 +54,7 @@ const WorksDetail = () => {
       <div>
         <p id='worksDetail__sentence' className={`${data.lang}`}>{data.sentence.split('\n').map((t, index) => (<span key={index}>{t}<br /></span>))}</p>
       </div>
-      <p id='worksDetail__link' onClick={() => { navigation(-1) }}>checkout◁</p>
+      <p id='worksDetail__link' className='link' onClick={() => { navigation(-1) }}>checkout◁</p>
     </section>
   )
 }
