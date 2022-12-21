@@ -1,7 +1,15 @@
+import React, {useState} from 'react'
+import photos from './Photos.js'
+import PhotosInner from './PhotosInner.jsx'
+
 const Photos = () => {
+
+  const [items, setItems] = useState(photos)
   return (
-    <section className="wrapper">
-      <h1>Photos</h1>
+    <section id="photos" className="wrapper">
+      <div id="photos__wrap">
+        <PhotosInner items = {items} />
+      </div>
     </section>
   )
 }

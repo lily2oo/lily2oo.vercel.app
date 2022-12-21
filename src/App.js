@@ -4,8 +4,9 @@ import Header from './routes/Header';
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/Home.jsx";
 import Works from "./routes/Works.jsx";
-import Works_detail from './routes/WorksDetail';
+import WorksDetail from './routes/WorksDetail';
 import Photos from "./routes/Photos.jsx";
+import PhotosDetail from './routes/PhotosDetail';
 import Persona from './routes/Persona';
 import About from "./routes/About.jsx";
 
@@ -17,8 +18,9 @@ const App = () => {
       <Routes>
         <Route path={`/`} element={<Home />} />
         <Route path={`/works/`} element={<Works />} />
-        <Route path={`/works/detail/:paramsId`} element={<Works_detail />} />
+        <Route path={`/works/detail/:paramsId`} element={<WorksDetail />} />
         <Route path={`/photos/`} element={<Photos />} />
+        <Route path={`/photos/detail/:paramsId`} element={<PhotosDetail />} />
         <Route path={`/persona/`} element={<Persona />} />
         <Route path={`/about/`} element={<About />} />
       </Routes>

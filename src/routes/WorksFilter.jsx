@@ -1,4 +1,4 @@
-import Data from "./Data"
+import Data from "./Works"
 
 
 const WorksFilter = ({ filterItem, setItem, menuItems }) => {

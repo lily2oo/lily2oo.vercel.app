@@ -1,4 +1,4 @@
-const Data = [
+const Works = [
     {
         id :"1",
         category: "movie",
@@ -20,7 +20,7 @@ const Data = [
     {
         id :"2",
         category: "design",
-        image: "images/thumb/worksThumb2.png",
+        image: "images/image/worksImage2.webp",
         thumb: "images/thumb/worksThumb2.png",
         title: "night in the train.",
         lang: "en",
@@ -29,7 +29,7 @@ const Data = [
     {
         id :"3",
         category: "design",
-        image: "images/thumb/worksThumb3.png",
+        image: "images/image/worksImage3.webp",
         thumb: "images/thumb/worksThumb3.png",
         title: "future.",
         lang: "en",
@@ -38,7 +38,7 @@ const Data = [
     {
         id :"4",
         category: "story",
-        image: "images/thumb/worksThumb4.png",
+        image: "images/image/worksImage4.webp",
         thumb: "images/thumb/worksThumb4.png",
         title: "witch",
         lang: "en",
@@ -62,7 +62,7 @@ const Data = [
     {
         id :"6",
         category: "design",
-        image: "images/thumb/worksThumb6.png",
+        image: "images/image/worksImage6.webp",
         thumb: "images/thumb/worksThumb6.png",
         title: "The Wheel Of My Life",
         lang: "en",
@@ -93,4 +93,4 @@ const Data = [
     }
 ];
 
-export default Data
+export default Works

@@ -16,7 +16,6 @@ const Home = () => {
   function changeImage() {
     const homeImage = document.getElementById("home__image");
     setCount((prevState) => prevState + 1);
-    console.log(countRef.current);
     if(countRef.current >= images.length -1){
       setCount(0);
     }

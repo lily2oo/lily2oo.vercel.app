@@ -9,8 +9,8 @@ const Header = () => {
       <nav>
         <ul>
           <li><NavLink activeclassname="active" to={`/works/`}>works</NavLink></li>
-          {/* <li><NavLink activeclassname="active" to={`/photos/`}>photos</NavLink></li>
-          <li><NavLink activeclassname="active" to={`/prototypes/`}>prototypes</NavLink></li> */}
+          <li><NavLink activeclassname="active" to={`/photos/`}>photos</NavLink></li>
+          {/* <li><NavLink activeclassname="active" to={`/prototypes/`}>prototypes</NavLink></li> */}
           {/* <li><NavLink activeclassname="active" to={`/persona/`}>persona</NavLink></li> */}
           <li><NavLink activeclassname="active" to={`/about/`}>about</NavLink></li>
         </ul>

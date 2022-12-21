@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Data from './Data'
+import Data from './Works'
 import WorksInner from './WorksInner.jsx'
 import WorksFilter from "./WorksFilter";
 
