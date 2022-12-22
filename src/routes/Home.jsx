@@ -11,8 +11,6 @@ const Home = () => {
     'images/photos/rainy/rainy5.webp',
     'images/photos/reflect/reflect11.webp',
     'images/photos/summer/summer4.webp',
-    'images/photos/time/time4.webp',
-    'images/photos/noname/noname1.webp',
     'images/photos/noname/noname2.webp',
     'images/photos/noname/noname3.webp',
     'images/photos/noname/noname4.webp',
@@ -23,6 +21,11 @@ const Home = () => {
     countRef.current = Math.floor(Math.random() * images.length);
     homeImage.src = images[countRef.current];
     console.log(countRef.current);
+    for(let i=0; i<images.length; i++){
+      const img = new Image();
+      img.src = images[i];
+      console.log(i);
+    }
     setTimeout(function () {
       homeImage.classList.add('show');
     }, 200);
