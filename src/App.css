@@ -31,7 +31,7 @@ a {
   overflow: hidden;
 }
 
-.cursor {
+#cursor {
   position: fixed;
   top: -5px;
   left: -5px;
@@ -41,11 +41,19 @@ a {
   background-color: #0E5E6F;
   mix-blend-mode: difference;
   z-index: 1000;
-  transition: width 0.7s ease, height 0.7s ease, top 0.5s ease, left 0.5s ease;
+  transition: 0.1s ease-out;
   transform: translate(0, 0);
   pointer-events: none;
   -webkit-animation: 8s infinite light ease;
           animation: 8s infinite light ease;
+}
+#cursor.cursor--hover {
+  top: -20px;
+  left: -20px;
+  width: 40px;
+  height: 40px;
+  background: rgba(205, 114, 113, 0.5);
+  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
 }
 
 @-webkit-keyframes light {
@@ -71,15 +79,6 @@ a {
     opacity: 50%;
   }
 }
-.cursor.cursor--hover {
-  top: -20px;
-  left: -20px;
-  width: 40px;
-  height: 40px;
-  background: rgba(205, 114, 113, 0.5);
-  transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
-}
-
 .wrapper {
   width: 100vw;
 }
@@ -249,7 +248,18 @@ header nav ul li {
   width: 800px;
   background-color: #000;
 }
-#works #works__wrap .works__inner .works__mask {
+#works #works__wrap .works__inner .works__link {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+}
+
+.mask {
   position: absolute;
   top: 0;
   left: 0;
@@ -259,11 +269,11 @@ header nav ul li {
   opacity: 0;
   transition: 0.5s ease;
 }
-#works #works__wrap .works__inner .works__mask.show {
+.mask.show {
   opacity: 1;
   transition: 0.5s ease;
 }
-#works #works__wrap .works__inner .works__mask .works__mask-overlay {
+.mask .mask-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -274,7 +284,7 @@ header nav ul li {
   mix-blend-mode: overlay;
   transition: 0.5s ease;
 }
-#works #works__wrap .works__inner .works__mask .works__mask-textbox {
+.mask .mask-textbox {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -284,14 +294,14 @@ header nav ul li {
   line-height: 1;
   text-align: left;
 }
-#works #works__wrap .works__inner .works__mask .works__mask-textbox .works__mask-ttl {
+.mask .mask-textbox .works__mask-ttl {
   font-size: 2.5rem;
 }
-#works #works__wrap .works__inner .works__mask .works__mask-textbox .works__mask-txt {
+.mask .mask-textbox .works__mask-txt {
   font-size: 1.5rem;
   margin-top: 10px;
 }
-#works #works__wrap .works__inner .works__mask .works__mask-border {
+.mask .mask-border {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -299,18 +309,9 @@ header nav ul li {
   z-index: 3;
   height: 80%;
   width: 100%;
-  border: dashed 1px #FFF5EB;
+  border-top: dashed 1px #FFF5EB;
+  border-bottom: dashed 1px #FFF5EB;
   transition: 0.5s ease;
-}
-#works #works__wrap .works__inner .works__link {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-  width: 100%;
-  height: 100%;
 }
 
 /* worksDetail */
@@ -390,10 +391,26 @@ header nav ul li {
   flex-wrap: wrap;
 }
 #photos__wrap .photos__inner {
+  position: relative;
   margin: 100px 40px;
   padding: 0;
 }
-#photos__wrap .photos__inner .photos__img {
+#photos__wrap .photos__inner .mask {
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+#photos__wrap .photos__inner .mask:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+#photos__wrap .photos__inner .mask .mask-textbox {
+  color: white;
+}
+#photos__wrap .photos__inner .mask .mask-border {
+  opacity: 0.6;
+}
+#photos__wrap .photos__img {
   width: 300px;
 }
 
@@ -412,8 +429,14 @@ header nav ul li {
   width: 0;
   height: 0;
   border-right: 20px solid transparent;
-  border-bottom: 34.6px solid #D9D9D9;
+  border-bottom: 34.6px solid #8BA6B1;
   border-left: 20px solid transparent;
+  opacity: 0.6;
+  transition: 0.5 ease;
+}
+#photosDetail #photosDetail__slider .triangle:hover {
+  opacity: 0.8;
+  transition: 0.5 ease;
 }
 #photosDetail #photosDetail__slider .triangle:nth-child(1) {
   left: 5vh;
@@ -435,7 +458,7 @@ header nav ul li {
 #photosDetail #photosDetail__title {
   font-size: 2rem;
   margin-top: 3vh;
-  font-weight: 300;
+  font-weight: 100;
 }
 #photosDetail #photosDetail__sentence {
   display: inline-block;

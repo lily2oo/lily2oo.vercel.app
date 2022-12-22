@@ -49,7 +49,7 @@ const Photos = [
             "/images/photos/maruta/maruta5.webp",
             "/images/photos/maruta/maruta6.webp",
         ],
-        title: "マルタ共和国",
+        title: "Malta",
         sentence: "ギャップイヤーの際に、留学していたマルタ共和国にて撮影。トマトソースと、たばこと、海の匂いがする国。暖かく、ゆとりのある国。張り詰めた自分に、適当に生きていいんだよと教えてくれた国。"
     },
     {
@@ -193,7 +193,7 @@ const Photos = [
             "/images/photos/london/london2.webp",
             "/images/photos/london/london3.webp",
         ],
-        title: "ロンドン",
+        title: "London",
         sentence: "マルタから1万円でロンドンに行けたので、ルームメイトと弾丸旅行。物価が高かった。"
     },
 ];

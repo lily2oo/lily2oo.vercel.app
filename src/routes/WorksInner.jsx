@@ -9,14 +9,14 @@ const WorksInner = ({ item }) => {
         return (
           <div key={Val.id} className='works__inner'>
             <img src={`${process.env.PUBLIC_URL}/${Val.thumb}`} alt="" />
-            <div className="works__mask">
+            <div className="works__mask mask">
               <img src={`${process.env.PUBLIC_URL}/${Val.thumb}`} alt="" />
-              <div className="works__mask-overlay"></div>
-              <div className="works__mask-textbox">
-                <p className="works__mask-ttl">{Val.title}</p>
-                <p className="works__mask-txt">▷checkin</p>
+              <div className="works__mask-overlay mask-overlay"></div>
+              <div className="works__mask-textbox mask-textbox">
+                <p className="works__mask-ttl mask-ttl">{Val.title}</p>
+                <p className="works__mask-txt mask-txt">▷checkin</p>
               </div>
-              <div className="works__mask-border"></div>
+              <div className="works__mask-border mask-border" ></div>
             </div>
             <Link to={`/works/detail/${Val.id}`} key={Val.id} state={{ id: "id" }} id={Val.id} className='works__link link'>
             </Link>
