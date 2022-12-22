@@ -20,11 +20,9 @@ const Home = () => {
     const homeImage = document.getElementById("home__image");
     countRef.current = Math.floor(Math.random() * images.length);
     homeImage.src = images[countRef.current];
-    console.log(countRef.current);
     for(let i=0; i<images.length; i++){
       const img = new Image();
       img.src = images[i];
-      console.log(i);
     }
     setTimeout(function () {
       homeImage.classList.add('show');
