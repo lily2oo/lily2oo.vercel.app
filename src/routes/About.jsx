@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <section id="about" className="wrapper">
-      <img src="/images/about/me.png" alt="" />
+      <img src="/images/about/me.webp" alt="" />
       <p>Jumpei Suko<br /><br />
         Born in Tokyo, Japan.<br />
         Digital Hollywood University March 2021 - Current.<br />

@@ -146,14 +146,22 @@ header {
     text-align: center;
     margin-bottom: 10%;
 
-    .home__image {
+    #home__imageWrap {
+        position: relative;
         width: 100%;
-        opacity: 0;
-        transition: 0.8s ease;
+        aspect-ratio: 21/9;
+        overflow: hidden;
 
-        &.show {
-            opacity: 1;
+        .home__image {
+            @include absoluteCenter();
+            width: 100%;
+            opacity: 0;
             transition: 0.8s ease;
+
+            &.show {
+                opacity: 1;
+                transition: 0.8s ease;
+            }
         }
     }
 }
@@ -444,6 +452,7 @@ header {
     #photosDetail__slider {
         width: 100%;
         position: relative;
+
         .triangle {
             position: absolute;
             top: 50%;
@@ -455,11 +464,13 @@ header {
             border-bottom: 1.73*$size solid #D9D9D9;
             border-left: $size solid transparent;
         }
-        .triangle:nth-child(1){
+
+        .triangle:nth-child(1) {
             left: 5vh;
             transform: rotate(-90deg);
         }
-        .triangle:nth-child(2){
+
+        .triangle:nth-child(2) {
             right: 5vh;
             transform: rotate(90deg);
         }
