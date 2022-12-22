@@ -3,7 +3,7 @@ const Works = [
         id :"1",
         category: "movie",
         image: "Zs0JoPXo0jQ",
-        thumb: "images/thumb/worksThumb1.png",
+        thumb: "images/thumb/worksThumb1.webp",
         title: "Aquarium",
         lang: "ja",
         sentence: "「ぼくはままならない波の中を泳ぎたいんだ。」\n\n\
@@ -21,7 +21,7 @@ const Works = [
         id :"2",
         category: "design",
         image: "images/image/worksImage2.webp",
-        thumb: "images/thumb/worksThumb2.png",
+        thumb: "images/thumb/worksThumb2.webp",
         title: "night in the train.",
         lang: "en",
         sentence: "My first design work. namecard."
@@ -30,7 +30,7 @@ const Works = [
         id :"3",
         category: "design",
         image: "images/image/worksImage3.webp",
-        thumb: "images/thumb/worksThumb3.png",
+        thumb: "images/thumb/worksThumb3.webp",
         title: "future.",
         lang: "en",
         sentence: "I don't think about my future deeply. "
@@ -39,7 +39,7 @@ const Works = [
         id :"4",
         category: "story",
         image: "images/image/worksImage4.webp",
-        thumb: "images/thumb/worksThumb4.png",
+        thumb: "images/thumb/worksThumb4.webp",
         title: "witch",
         lang: "en",
         sentence: "illustration"
@@ -48,7 +48,7 @@ const Works = [
         id :"5",
         category: "movie",
         image: "WKHJRmad4gI",
-        thumb: "images/thumb/worksThumb5.png",
+        thumb: "images/thumb/worksThumb5.webp",
         title: "2001.12.11 - 2022.05.27",
         lang: "en",
         sentence: "This is my reel from 2001.12.11 to 2022.05.27.\n\
@@ -63,7 +63,7 @@ const Works = [
         id :"6",
         category: "design",
         image: "images/image/worksImage6.webp",
-        thumb: "images/thumb/worksThumb6.png",
+        thumb: "images/thumb/worksThumb6.webp",
         title: "The Wheel Of My Life",
         lang: "en",
         sentence: "Hello everyone, I’m Jumpei Suko and I’d like to present to you about my Wheel of Life. \n\
@@ -83,8 +83,8 @@ const Works = [
     {
         id :"7",
         category: "web",
-        image: "images/thumb/worksThumb7.png",
-        thumb: "images/thumb/worksThumb7.png",
+        image: "images/thumb/worksThumb7.webp",
+        thumb: "images/thumb/worksThumb7.webp",
         title: "SA Exhibition.",
         sentence: "This is website. You can click photo and jump to this site.\n\
         I was in charge of the first page.",
