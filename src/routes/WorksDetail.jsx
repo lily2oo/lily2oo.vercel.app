@@ -7,8 +7,6 @@ const WorksDetail = () => {
   const data = Data.find(({ id }) => id === paramsId);
   const isMovie = data.category === "movie";
   const isWeb = data.category === "web";
-  const isStory = data.category === "story";
-  const isDesign = data.category === "design";
   const navigation = useNavigate();
 
   useEffect(() => {
@@ -18,7 +16,7 @@ const WorksDetail = () => {
 
   function imgSizeChange() {
     const img = new Image();
-    img.src = '/' + data.image;
+    img.src = '/' + data.content;
 
     img.onload = () => {
       const size = {
@@ -43,11 +41,11 @@ const WorksDetail = () => {
     <section className="wrapper" id="worksDetail">
       <div id='worksDetail__contentWrap' className='worksDetail__imageWrap'>
         {isWeb ? (
-          <a id='worksDetail__webLink' href={`${data.url}`}><img id='worksDetail__image' src={`/${data.image}`} /></a>
+          <a id='worksDetail__webLink' href={`${data.url}`}><img id='worksDetail__image' src={`/${data.content}`} /></a>
         ) : (isMovie ? (
-          <div id='worksDetail__movieWrap'><iframe loading='lazy' width='100%' height='100%' allowfullscreenn='1' src={`https://www.youtube-nocookie.com/embed/${data.image}?controls=1&autoplay=1&mute=1&loop=1&playlist=${data.image}&rel=0`} frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe></div>
+          <div id='worksDetail__movieWrap'><iframe loading='lazy' width='100%' height='100%' allowfullscreenn='1' src={`https://www.youtube-nocookie.com/embed/${data.content}?controls=1&autoplay=1&mute=1&loop=1&playlist=${data.content}&rel=0`} frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe></div>
         ) : (
-          <img id='worksDetail__image' src={`/${data.image}`} alt="" />
+          <img id='worksDetail__image' src={`/${data.content}`} alt="" />
         ))}
       </div>
       <h2 id='worksDetail__title'>{data.title}</h2>

@@ -2,7 +2,7 @@ const Works = [
     {
         id :"1",
         category: "movie",
-        image: "Zs0JoPXo0jQ",
+        content: "Zs0JoPXo0jQ",
         thumb: "images/thumb/worksThumb1.webp",
         title: "Aquarium",
         lang: "ja",
@@ -20,7 +20,7 @@ const Works = [
     {
         id :"2",
         category: "design",
-        image: "images/image/worksImage2.webp",
+        content: "images/image/worksImage2.webp",
         thumb: "images/thumb/worksThumb2.webp",
         title: "night in the train.",
         lang: "en",
@@ -29,7 +29,7 @@ const Works = [
     {
         id :"3",
         category: "design",
-        image: "images/image/worksImage3.webp",
+        content: "images/image/worksImage3.webp",
         thumb: "images/thumb/worksThumb3.webp",
         title: "future.",
         lang: "en",
@@ -38,7 +38,7 @@ const Works = [
     {
         id :"4",
         category: "story",
-        image: "images/image/worksImage4.webp",
+        content: "images/image/worksImage4.webp",
         thumb: "images/thumb/worksThumb4.webp",
         title: "witch",
         lang: "en",
@@ -47,7 +47,7 @@ const Works = [
     {
         id :"5",
         category: "movie",
-        image: "WKHJRmad4gI",
+        content: "WKHJRmad4gI",
         thumb: "images/thumb/worksThumb5.webp",
         title: "2001.12.11 - 2022.05.27",
         lang: "en",
@@ -62,7 +62,7 @@ const Works = [
     {
         id :"6",
         category: "design",
-        image: "images/image/worksImage6.webp",
+        content: "images/image/worksImage6.webp",
         thumb: "images/thumb/worksThumb6.webp",
         title: "The Wheel Of My Life",
         lang: "en",
@@ -83,7 +83,7 @@ const Works = [
     {
         id :"7",
         category: "web",
-        image: "images/thumb/worksThumb7.webp",
+        content: "images/thumb/worksThumb7.webp",
         thumb: "images/thumb/worksThumb7.webp",
         title: "SA Exhibition.",
         sentence: "This is website. You can click photo and jump to this site.\n\

@@ -13,6 +13,10 @@ const PhotosDetail = () => {
   countRef.current = count;
 
   useEffect(() => {
+    for (let i = 0; i < data.images.length; i++) {
+      const img = new Image();
+      img.src = data.images[i];
+    }
   }, [])
 
   function decrementCount() {

@@ -15,6 +15,10 @@ const Works = () => {
     }
 
     useEffect(() => {
+        for(let i=0; i<Data.length; i++){
+            const img = new Image();
+            img.src = '/' + Data[i].content;
+          }
         window.addEventListener('scroll', scroll_effect);
         return () => {
             window.removeEventListener('scroll', scroll_effect);
