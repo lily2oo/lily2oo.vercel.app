@@ -29,7 +29,6 @@ const App = () => {
       });
       cursor.classList.remove('cursor--hover');
     }
-    console.log(location.pathname)
   })
 
   return (

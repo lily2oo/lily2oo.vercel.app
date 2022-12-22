@@ -5,30 +5,48 @@ import Data from './Photos.js'
 const PhotosDetail = () => {
   const { paramsId } = useParams();
   const data = Data.find(({ id }) => id === paramsId);
+  const navigate = useNavigate();
+
+
   const [count, setCount] = useState(0);
   const countRef = useRef(null);
   countRef.current = count;
-  const navigate = useNavigate();
 
   useEffect(() => {
   }, [])
 
-  function changeImage() {
+  function decrementCount() {
     const photosDetailImage = document.getElementById("photosDetail__image");
-    setCount((prevState) => prevState + 1);
+    countRef.current--;
 
-    if (countRef.current >= data.images.length - 1) {
-      setCount(0);
+    if (0 > countRef.current) {
+      countRef.current = data.images.length - 1;
     }
-    photosDetailImage.src = data.images[countRef.current];
 
-  }
+    console.log(countRef.current);
+    photosDetailImage.src = data.images[countRef.current];
+  };
+
+  function incrementCount() {
+    const photosDetailImage = document.getElementById("photosDetail__image");
+    countRef.current++;
+
+    if (countRef.current > data.images.length - 1) {
+      countRef.current = 0;
+    }
+    console.log(countRef.current);
+    photosDetailImage.src = data.images[countRef.current];
+  };
 
   return (
     <>
       <section className="wrapper" id="photosDetail">
-        <div id='photosDetail__imageWrap'>
-          <img id='photosDetail__image' className='link' src={`${data.thumb}`} onClick={() => { changeImage() }} />
+        <div id="photosDetail__slider">
+          <div className='triangle link' onClick={decrementCount}></div>
+          <div className='triangle link' onClick={incrementCount}></div>
+          <div id='photosDetail__imageWrap'>
+            <img id='photosDetail__image' src={`${data.images[0]}`} />
+          </div>
         </div>
         <h2 id='photosDetail__title'>{data.title}</h2>
         <div>
