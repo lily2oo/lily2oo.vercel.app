@@ -155,7 +155,12 @@ header {
             @include absoluteCenter();
             width: 100%;
             opacity: 0;
+            filter: sepia(0) grayscale(0);
             transition: 0.8s ease;
+            &:hover{
+                translate: 0.5s ease;
+                filter: sepia(40%) grayscale(50%);
+            }
 
             &.show {
                 opacity: 1;
@@ -232,6 +237,7 @@ header {
         .works__decoration {
             position: absolute;
             z-index: 0;
+            filter: sepia(20%);
         }
 
         .works__decoration:nth-child(1) {
@@ -270,6 +276,7 @@ header {
             img {
                 width: 800px;
                 background-color: $subColor;
+                filter: sepia(40%) grayscale(50%);
             }
 
             .works__link {
@@ -278,6 +285,12 @@ header {
                 z-index: 3;
                 width: 100%;
                 height: 100%;
+            }
+
+            .mask{
+                img{
+                    filter: sepia(0) grayscale(0%);
+                }
             }
         }
     }
@@ -303,6 +316,7 @@ header {
         height: 100%;
         background-color: $subColor;
         mix-blend-mode: overlay;
+        opacity: 20%;
         transition: 0.5s ease;
     }
 
@@ -439,6 +453,7 @@ header {
             font-size: 1.5rem;
             font-weight: 100;
             letter-spacing: 0.1em;
+            filter: sepia(50%);
             &:hover {
                 opacity: 1;
                 transition: 0.5s ease;
@@ -467,6 +482,7 @@ header {
     #photosDetail__slider {
         width: 100%;
         position: relative;
+
 
         .triangle {
             position: absolute;
@@ -504,7 +520,13 @@ header {
             background-color: $subColor;
 
             #photosDetail__image {
-                height: 100%
+                height: 100%;
+                filter: sepia(0) grayscale(0);
+                transition: 0.5s ease;
+                &:hover{
+                    translate: 0.5s ease;
+                    filter: sepia(40%) grayscale(50%);
+                }
             }
         }
     }
@@ -553,6 +575,12 @@ header {
 
     img {
         width: 300px;
+        filter: sepia(0);
+        transition: 0.8s ease;
+        &:hover{
+            translate: 0.5s ease;
+            filter: sepia(20%);
+        }
     }
 
     p {
