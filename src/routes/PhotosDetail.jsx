@@ -22,8 +22,6 @@ const PhotosDetail = () => {
     if (0 > countRef.current) {
       countRef.current = data.images.length - 1;
     }
-
-    console.log(countRef.current);
     photosDetailImage.src = data.images[countRef.current];
   };
 
@@ -34,7 +32,6 @@ const PhotosDetail = () => {
     if (countRef.current > data.images.length - 1) {
       countRef.current = 0;
     }
-    console.log(countRef.current);
     photosDetailImage.src = data.images[countRef.current];
   };
 
