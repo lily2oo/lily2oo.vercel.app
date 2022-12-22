@@ -16,16 +16,22 @@ const Home = () => {
 
   function changeImage() {
     const homeImage = document.getElementById("home__image");
-    setCount((prevState) => prevState + 1);
-    if(countRef.current >= images.length -1){
-      setCount(0);
-    }
-    homeImage.src = images[countRef.current];
+    homeImage.classList.remove('show');
+    setTimeout(function(){
+      setCount((prevState) => prevState + 1);
+      if(countRef.current >= images.length -1){
+        setCount(0);
+      }
+      homeImage.src = images[countRef.current];
+    }, 800)
+    setTimeout(function(){
+      homeImage.classList.add('show');
+    }, 800);
   };
 
   return (
     <section id="home" className="wrapper">
-      <img id="home__image" className="home__image" src="" />
+      <img id="home__image" className="home__image show" src="" />
       <div className="link" id="logo">
         <div id="logo__text">
           <p>lily2oo</p>
