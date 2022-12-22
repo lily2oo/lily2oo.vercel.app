@@ -43,10 +43,10 @@ const Home = () => {
           break;
         }
       }
-    }, 800)
+    }, 1000)
     setTimeout(function () {
       homeImage.classList.add('show');
-    }, 800);
+    }, 1000);
   };
 
   return (
