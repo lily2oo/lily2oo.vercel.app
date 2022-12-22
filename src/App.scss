@@ -148,7 +148,12 @@ header {
 
     .home__image {
         width: 100%;
-        opacity: 1;
+        opacity: 0;
+        transition: 0.8s ease;
+        &.show{
+            opacity: 1;
+            transition: 0.8s ease;
+        }
     }
 }
 

@@ -126,7 +126,12 @@ header nav ul li {
 }
 #home .home__image {
   width: 100%;
+  opacity: 0;
+  transition: 0.8s ease;
+}
+#home .home__image.show {
   opacity: 1;
+  transition: 0.8s ease;
 }
 
 #logo {
