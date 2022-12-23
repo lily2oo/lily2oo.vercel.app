@@ -15,6 +15,7 @@ import useLocationChange from "./fooks/useLocationChange.tsx"
 const App = () => {
 
   useLocationChange((location) => {
+    window.scrollTo(0, 0);
     const cursor = document.getElementById('cursor');
     document.addEventListener('mousemove', function (e) {
       cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
