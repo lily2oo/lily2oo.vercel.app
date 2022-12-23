@@ -40,7 +40,6 @@ const Home = () => {
         if (num !== countRef.current) {
           countRef.current = num;
           homeImage.src = images[countRef.current];
-          console.log(countRef.current);
           break;
         }
       }
@@ -61,7 +60,7 @@ const Home = () => {
           <p>Jumpei Suko</p>
         </div>
       </div>
-      <p>2022 Jumpei Suko All Rights Reserved.</p>
+      <p id="footer">2022 Jumpei Suko All Rights Reserved.</p>
     </section>
   )
 }
