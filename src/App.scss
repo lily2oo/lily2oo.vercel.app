@@ -16,6 +16,10 @@ $complementaryColor: #F19E8D;
     padding: 0;
 }
 
+img{
+    vertical-align: middle;
+}
+
 html {
     font-size: 62.5%;
     cursor: none;
@@ -40,6 +44,7 @@ a {
     overflow: hidden;
 }
 
+
 #cursor {
     position: fixed;
     top: -5px;
@@ -50,8 +55,6 @@ a {
     background-color: $mainColor;
     mix-blend-mode: difference;
     z-index: 1000;
-    transition: 0.1s ease-out;
-    transform: translate(0, 0);
     pointer-events: none;
     animation: 8s infinite light ease;
 
@@ -69,14 +72,6 @@ a {
         }
     }
 
-    &.cursor--hover {
-        top: -20px;
-        left: -20px;
-        width: 40px;
-        height: 40px;
-        background: rgba(205, 114, 113, 0.5);
-        transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
-    }
 }
 
 .wrapper {
@@ -224,6 +219,15 @@ header {
             background-color: $subColor;
             padding-right: 10px;
             line-height: 1.1;
+            position: relative;
+            span{
+                @include absolute();
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                background-color: $mainColor;
+                z-index: -1;
+            }
         }
     }
 
@@ -437,6 +441,22 @@ header {
 }
 
 /* Photos */
+
+// #photos__loading{
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 1000;
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: $subColor;
+//     p{
+//         font-size: 6rem;
+//         color: $mainColor;
+//         @include absoluteCenter();
+//     }
+// }
+
 
 #photos__wrap {
     width: 100vw;

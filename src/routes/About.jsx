@@ -1,4 +1,15 @@
+import gsap from "gsap"
+import { useEffect } from "react"
+
 const About = () => {
+  useEffect(()=>{
+    gsap.fromTo("#about",{
+      opacity:0
+    },{
+      opacity:1,
+      duration:1,
+    })
+  })
   return (
     <section id="about" className="wrapper">
       <img src="/images/about/me.webp" alt="" />

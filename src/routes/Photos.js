@@ -1,6 +1,6 @@
 const Photos = [
     {
-        id: "1",
+        id: "0",
         thumb: "/images/photos/ranman/2.webp",
         images: [
             "/images/photos/ranman/1.webp",
@@ -13,7 +13,7 @@ const Photos = [
         sentence: "明かりが灯っている。明かりはありのままを写している。"
     },
     {
-        id: "2",
+        id: "1",
         thumb: "/images/photos/rainy/rainy5.webp",
         images: [
             "/images/photos/rainy/rainy1.webp",
@@ -26,7 +26,7 @@ const Photos = [
         sentence: "なんだか哀しくて、外に出た。やっぱり悲しくて、写真を撮った。アロエヨーグルトの匂いがした。"
     },
     {
-        id: "3",
+        id: "2",
         thumb: "/images/photos/time/time4.webp",
         images: [
             "/images/photos/time/time1.webp",
@@ -39,7 +39,7 @@ const Photos = [
         sentence: "人並みで生きれれば良いはずなのに、人並みにもなれないから、比べてる時間があるなら、大切な人を大切にしたいと思った。"
     },
     {
-        id: "4",
+        id: "3",
         thumb: "/images/photos/maruta/maruta1.webp",
         images: [
             "/images/photos/maruta/maruta1.webp",
@@ -53,7 +53,7 @@ const Photos = [
         sentence: "ギャップイヤーの際に、留学していたマルタ共和国にて撮影。トマトソースと、たばこと、海の匂いがする国。暖かく、ゆとりのある国。張り詰めた自分に、適当に生きていいんだよと教えてくれた国。"
     },
     {
-        id: "5",
+        id: "4",
         thumb: "/images/photos/bridge/bridge8.webp",
         images: [
             "/images/photos/bridge/bridge1.webp",
@@ -73,7 +73,7 @@ const Photos = [
         sentence: "子供の頃感じていた夏の匂いは、もうわからなくなってしまったけれど、街並みが年月を、雲が夏と記憶を運んできてくれる。"
     },
     {
-        id: "6",
+        id: "5",
         thumb: "/images/photos/haneda/haneda2.webp",
         images: [
             "/images/photos/haneda/haneda1.webp",
@@ -88,7 +88,7 @@ const Photos = [
         sentence: "2022.6.1_羽田空港"
     },
     {
-        id: "7",
+        id: "6",
         thumb: "/images/photos/osanpo/osanpo2.webp",
         images: [
             "/images/photos/osanpo/osanpo1.webp",
@@ -101,7 +101,7 @@ const Photos = [
         sentence: "2021_12_10_中央線沿い"
     },
     {
-        id: "8",
+        id: "7",
         thumb: "/images/photos/summer/summer4.webp",
         images: [
             "/images/photos/summer/summer1.webp",
@@ -120,7 +120,7 @@ const Photos = [
         sentence: "2021.5.27_近所"
     },
     {
-        id: "9",
+        id: "8",
         thumb: "/images/photos/koenji/koenji2.webp",
         images: [
             "/images/photos/koenji/koenji1.webp",
@@ -130,7 +130,7 @@ const Photos = [
         sentence: "2022.4.30_高円寺"
     },
     {
-        id: "10",
+        id: "9",
         thumb: "/images/photos/time/time4.webp",
         images: [
             "/images/photos/time/time1.webp",
@@ -143,7 +143,7 @@ const Photos = [
         sentence: "人並みで生きれれば良いはずなのに、人並みにもなれないから、比べてる時間があるなら、大切な人を大切にしたいと思った。"
     },
     {
-        id: "11",
+        id: "10",
         thumb: "/images/photos/item/item2.webp",
         images: [
             "/images/photos/item/item1.webp",
@@ -154,7 +154,7 @@ const Photos = [
         sentence: "2021.12.21_お茶の水キャンパス"
     },
     {
-        id: "12",
+        id: "11",
         thumb: "/images/photos/amayadori/amayadori1.webp",
         images: [
             "/images/photos/amayadori/amayadori1.webp",
@@ -165,7 +165,7 @@ const Photos = [
         sentence: "2021.5.26_吉祥寺"
     },
     {
-        id: "13",
+        id: "12",
         thumb: "/images/photos/reflect/reflect11.webp",
         images: [
             "/images/photos/reflect/reflect1.webp",
@@ -186,7 +186,7 @@ const Photos = [
         sentence: "2022.9.14_八王子キャンパス"
     },
     {
-        id: "14",
+        id: "13",
         thumb: "/images/photos/london/london2.webp",
         images: [
             "/images/photos/london/london1.webp",

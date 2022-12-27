@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Data from './Works'
 import WorksInner from './WorksInner.jsx'
 import WorksFilter from "./WorksFilter";
+import gsap from 'gsap';
 
 const Works = () => {
     const [item, setItem] = useState(Data);
@@ -13,6 +14,25 @@ const Works = () => {
         });
         setItem(newItem);
     }
+
+    useEffect(()=>{
+        gsap.fromTo("#works",{
+          opacity:0
+        },{
+          opacity:1,
+          duration:1,
+        })
+        gsap.fromTo(".worksFilter__link",{
+            autoAlpha:0,
+            width:0,
+          },{
+            autoAlpha:1,
+            width:"auto",
+            ease:"power3",
+            duration:0.4,
+            stagger:0.15,
+        })
+      })
 
     useEffect(() => {
         for(let i=0; i<Data.length; i++){
