@@ -25,7 +25,6 @@ const Home = () => {
     for(let i=0; i<images.length; i++){
       const img = new Image();
       img.src = images[i];
-      console.log(images[i])
     }
     setTimeout(function () {
       homeImage.classList.add('show');
@@ -38,12 +37,10 @@ const Home = () => {
     for (let i = 0; i < Works.length; i++) {
       const img = new Image();
       img.src = Works[i].thumb;
-      console.log(Works[i].thumb)
     }
     for (let i = 0; i < Photos.length; i++) {
       const img = new Image();
       img.src = Photos[i].thumb;
-      console.log(Photos[i].thumb)
     }
   }, [])
 
