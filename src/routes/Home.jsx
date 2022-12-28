@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import Works from "./Works";
+import Photos from "./Photos";
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -23,6 +25,7 @@ const Home = () => {
     for(let i=0; i<images.length; i++){
       const img = new Image();
       img.src = images[i];
+      console.log(images[i])
     }
     setTimeout(function () {
       homeImage.classList.add('show');
@@ -30,6 +33,19 @@ const Home = () => {
     const interval = setInterval(changeImage, 8000);
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    for (let i = 0; i < Works.length; i++) {
+      const img = new Image();
+      img.src = Works[i].thumb;
+      console.log(Works[i].thumb)
+    }
+    for (let i = 0; i < Photos.length; i++) {
+      const img = new Image();
+      img.src = Photos[i].thumb;
+      console.log(Photos[i].thumb)
+    }
+  }, [])
 
   function changeImage() {
     const homeImage = document.getElementById("home__image");
