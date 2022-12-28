@@ -16,7 +16,7 @@ $complementaryColor: #F19E8D;
     padding: 0;
 }
 
-img{
+img {
     vertical-align: middle;
 }
 
@@ -220,7 +220,8 @@ header {
             padding-right: 10px;
             line-height: 1.1;
             position: relative;
-            span{
+
+            span {
                 @include absolute();
                 display: inline-block;
                 width: 100%;
@@ -235,7 +236,7 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 100;
         line-height: 0;
         position: relative;
 
@@ -365,6 +366,10 @@ header {
             width: 100%;
             aspect-ratio: 16/9;
             margin: 0 auto;
+            // position: relative;
+            // video{
+            //     @include absoluteCenter()
+            // }
         }
 
         #worksDetail__image {
@@ -379,19 +384,46 @@ header {
             background-color: #000;
         }
 
-        #worksDetail__webLink {
-            transition: 0.5s ease;
+        #worksDetail__webWrap {
+            position: relative;
 
-            #worksDetail__image {
-                width: 90vw;
-                box-sizing: border-box;
+
+
+
+            #worksDetail__webLink {
+                text-decoration: none;
+                color: #fff;
+                font-size: 2rem;
+
+                &:hover #worksDetail__image {
+                    filter: sepia(100%);
+                }
+
+                #worksDetail__image {
+                    filter: sepia(0);
+                    transition: 0.5s ease;
+                }
+
+                &:hover #worksDetail__webFilter {
+                    opacity: 1;
+                }
+
+                #worksDetail__webFilter {
+                    opacity: 0;
+                    @include absoluteCenter();
+                    width: 100%;
+                    height: 100%;
+                    z-index: 2;
+                    transition: 0.5s ease;
+                    p{
+                        @include absoluteCenter()
+                    }
+                }
+
             }
 
-            &:hover #worksDetail__image {
-                border: #0E5E6F solid 5px;
-                transition: 0.5s ease;
-            }
         }
+
     }
 
     #worksDetail__title {
@@ -540,7 +572,7 @@ header {
 
         #photosDetail__imageWrap {
             height: auto;
-            width:80vw;
+            width: 80vw;
             max-width: 1000px;
             aspect-ratio: 3/2;
             margin: 0 auto;
@@ -757,5 +789,18 @@ header {
             margin-top: 40px;
             font-size: 1.6rem;
         }
+    }
+}
+
+@media screen and (max-width: 420px ){
+    html, body{
+        cursor: auto;
+    }
+    a, .link{
+        cursor: pointer;
+    }
+
+    #cursor{
+        display: none;
     }
 }

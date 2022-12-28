@@ -1,8 +1,8 @@
 const Works = [
     {
-        id :"1",
+        id :"0",
         category: "movie",
-        content: "Zs0JoPXo0jQ",
+        content: "images/image/aquarium.mp4",
         thumb: "images/thumb/worksThumb1.webp",
         title: "Aquarium",
         lang: "ja",
@@ -18,16 +18,16 @@ const Works = [
         だれもいない岩陰の中に僕の声は木霊した。まぶたを開くと、壁の外を泳ぐ発光性のクラゲがこちらを見つめていた。"
     },
     {
-        id :"2",
+        id :"1",
         category: "design",
         content: "images/image/worksImage2.webp",
         thumb: "images/thumb/worksThumb2.webp",
         title: "night in the train.",
         lang: "en",
-        sentence: "My first design work. namecard."
+        sentence: "This is my first design piece and is my business card as a programming educator. The motif is a ticket, and the purpose of this work was to communicate what I value and to get people interested in learning more about me."
     },
     {
-        id :"3",
+        id :"2",
         category: "design",
         content: "images/image/worksImage3.webp",
         thumb: "images/thumb/worksThumb3.webp",
@@ -36,8 +36,8 @@ const Works = [
         sentence: "I don't think about my future deeply. "
     },
     {
-        id :"4",
-        category: "story",
+        id :"3",
+        category: "design",
         content: "images/image/worksImage4.webp",
         thumb: "images/thumb/worksThumb4.webp",
         title: "witch",
@@ -45,9 +45,10 @@ const Works = [
         sentence: "illustration"
     },
     {
-        id :"5",
+        id :"4",
         category: "movie",
-        content: "WKHJRmad4gI",
+        // content: "WKHJRmad4gI",
+        content: "images/image/time.mp4",
         thumb: "images/thumb/worksThumb5.webp",
         title: "2001.12.11 - 2022.05.27",
         lang: "en",
@@ -60,7 +61,7 @@ const Works = [
         But then I fall asleep again."
     },
     {
-        id :"6",
+        id :"5",
         category: "design",
         content: "images/image/worksImage6.webp",
         thumb: "images/thumb/worksThumb6.webp",
@@ -81,13 +82,13 @@ const Works = [
         Thank you for listening to my presentation. "
     },
     {
-        id :"7",
+        id :"6",
         category: "web",
         content: "images/thumb/worksThumb7.webp",
         thumb: "images/thumb/worksThumb7.webp",
         title: "SA Exhibition.",
-        sentence: "This is website. You can click photo and jump to this site.\n\
-        I was in charge of the first page.",
+        sentence: "This is the site of an exhibition held as part of an English class.\n\
+        In the design, talent was used as the motif, and a collage using each piece of artwork was used as the main visual. The design also evokes the future and creativity, as is typical of our university.",
         lang: "en",
         url: "https://sa-exhibition.com/"
     }

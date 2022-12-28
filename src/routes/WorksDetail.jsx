@@ -1,6 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import Data from './Works'
+import gsap from 'gsap';
 
 const WorksDetail = () => {
   const { paramsId } = useParams();
@@ -12,6 +13,15 @@ const WorksDetail = () => {
   useEffect(() => {
     imgSizeChange();
   }, []);
+
+  useEffect(()=>{
+    gsap.fromTo("#worksDetail__contentWrap",{
+      opacity:0
+    },{
+      opacity:1,
+      duration:1,
+    })
+  })
 
 
   function imgSizeChange() {
@@ -39,11 +49,22 @@ const WorksDetail = () => {
 
   return (
     <section className="wrapper" id="worksDetail">
-      <div id='worksDetail__contentWrap' className='worksDetail__imageWrap'>
+      <div id='worksDetail__contentWrap'>
         {isWeb ? (
-          <a id='worksDetail__webLink' href={`${data.url}`}><img id='worksDetail__image' src={`/${data.content}`} /></a>
+          <div id='worksDetail__webWrap' className='link'>
+            <a id='worksDetail__webLink' href={`${data.url}`} target="_blank">
+              <img id='worksDetail__image' src={`/${data.content}`} />
+              <div id="worksDetail__webFilter">
+                <p>View Site▷</p>
+              </div>
+            </a>
+          </div>
         ) : (isMovie ? (
-          <div id='worksDetail__movieWrap'><iframe loading='lazy' width='100%' height='100%' allowfullscreenn='1' src={`https://www.youtube-nocookie.com/embed/${data.content}?controls=1&autoplay=1&mute=1&loop=1&playlist=${data.content}&rel=0`} frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe></div>
+        // 動画をvideoに差し替え
+          <div id='worksDetail__movieWrap'>
+            <video src={`/${data.content}`} controls autoPlay muted loop playsInline width="100%" preload='auto'></video>
+            {/* <iframe loading='lazy' width='100%' height='100%' allowfullscreenn='1' src={`https://www.youtube-nocookie.com/embed/${data.content}?controls=1&autoplay=1&mute=1&loop=1&playlist=${data.content}&rel=0`} frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowFullScreen></iframe> */}
+          </div>
         ) : (
           <img id='worksDetail__image' src={`/${data.content}`} alt="" />
         ))}
