@@ -335,6 +335,9 @@ header nav ul li {
   width: 90vw;
   margin: 10vh auto;
 }
+#worksDetail #worksDetail__contentWrap {
+  background-color: #000;
+}
 #worksDetail #worksDetail__contentWrap #worksDetail__movieWrap {
   width: 100%;
   aspect-ratio: 16/9;
@@ -354,8 +357,8 @@ header nav ul li {
 }
 #worksDetail #worksDetail__contentWrap #worksDetail__webWrap #worksDetail__webLink {
   text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
+  color: #0E5E6F;
+  font-size: 2.4rem;
 }
 #worksDetail #worksDetail__contentWrap #worksDetail__webWrap #worksDetail__webLink:hover #worksDetail__image {
   filter: sepia(100%);
@@ -383,6 +386,7 @@ header nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  mix-blend-mode: exclusion;
 }
 #worksDetail #worksDetail__title {
   margin-top: 80px;

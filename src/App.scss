@@ -362,6 +362,8 @@ header {
     margin: 10vh auto;
 
     #worksDetail__contentWrap {
+        background-color: $subColor;
+
         #worksDetail__movieWrap {
             width: 100%;
             aspect-ratio: 16/9;
@@ -387,13 +389,10 @@ header {
         #worksDetail__webWrap {
             position: relative;
 
-
-
-
             #worksDetail__webLink {
                 text-decoration: none;
-                color: #fff;
-                font-size: 2rem;
+                color: $mainColor;
+                font-size: 2.4rem;
 
                 &:hover #worksDetail__image {
                     filter: sepia(100%);
@@ -416,7 +415,8 @@ header {
                     z-index: 2;
                     transition: 0.5s ease;
                     p{
-                        @include absoluteCenter()
+                        @include absoluteCenter();
+                        mix-blend-mode: exclusion;
                     }
                 }
 
