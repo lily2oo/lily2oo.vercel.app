@@ -67,6 +67,15 @@ const Works = [
     },
     {
         id: "4",
+        category: "movie",
+        content: "images/image/yokohama.mp4",
+        thumb: "images/thumb/yokohama.webp",
+        title: "yokohamaPCclub.",
+        lang: "en",
+        sentence: "One time I created a project for a programming class that mentors give weekly lectures on their field of study. The purpose was to create new stimulation and motivation for the long-time attendees. This is the main visual I created for the occasion."
+    },
+    {
+        id: "5",
         category: "web",
         content: "images/image/worksImage10.webp",
         thumb: "images/thumb/worksThumb10.webp",
@@ -80,15 +89,6 @@ const Works = [
         https://otetesakka.com/",
         lang: "en",
         url: "https://otetesakka.com/"
-    },
-    {
-        id: "5",
-        category: "design",
-        content: "images/image/worksImage2.webp",
-        thumb: "images/thumb/worksThumb2.webp",
-        title: "night in the train.",
-        lang: "en",
-        sentence: "This is my first design piece and is my business card as a programming educator. The motif is a ticket, and the purpose of this work was to communicate what I value and to get people interested in learning more about me."
     },
     {
         id: "6",
@@ -121,6 +121,15 @@ const Works = [
     },
     {
         id: "9",
+        category: "movie",
+        content: "images/image/overdose.mp4",
+        thumb: "images/thumb/overdose.webp",
+        title: "overdose.",
+        lang: "en",
+        sentence: "I made a music video for a song called overdose. I created all the illustrations, video editing, and music myself."
+    },
+    {
+        id: "10",
         category: "web",
         content: "images/thumb/worksThumb8.webp",
         thumb: "images/thumb/worksThumb8.webp",
@@ -129,6 +138,15 @@ const Works = [
         The design was based on shapes in order to break away from the reliance on photographs.",
         lang: "en",
         url: "https://hibi-to-manuka.netlify.app/"
+    },
+    {
+        id: "11",
+        category: "design",
+        content: "images/image/worksImage2.webp",
+        thumb: "images/thumb/worksThumb2.webp",
+        title: "night in the train.",
+        lang: "en",
+        sentence: "This is my first design piece and is my business card as a programming educator. The motif is a ticket, and the purpose of this work was to communicate what I value and to get people interested in learning more about me."
     },
     
 ];
