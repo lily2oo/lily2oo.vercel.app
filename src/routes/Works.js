@@ -57,8 +57,8 @@ const Works = [
     {
         id: "3",
         category: "web",
-        content: "images/thumb/worksThumb7.webp",
-        thumb: "images/thumb/worksThumb7.webp",
+        content: "images/thumb/worksThumb11.webp",
+        thumb: "images/thumb/worksThumb11.webp",
         title: "SA Exhibition.",
         sentence: "This is the site of an exhibition held as part of an English class.\n\
         In the design, talent was used as the motif, and a collage using each piece of artwork was used as the main visual. The design also evokes the future and creativity, as is typical of our university.",
