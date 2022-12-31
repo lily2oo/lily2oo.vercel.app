@@ -10,27 +10,15 @@ import PhotosDetail from './routes/PhotosDetail';
 import Persona from './routes/Persona';
 import About from "./routes/About.jsx";
 import useLocationChange from "./fooks/useLocationChange.tsx"
+import { useEffect } from 'react';
 import gsap from 'gsap';
 
 
 const App = () => {
 
-  useLocationChange((location) => {
+  useEffect(()=>{
     window.scrollTo(0, 0);
     const cursor = document.getElementById('cursor');
-    // document.addEventListener('mousemove', function (e) {
-    //   cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-    // });
-    // let link = document.querySelectorAll('a, .link');
-    // for (var i = 0; i < link.length; i++) {
-    //   link[i].addEventListener('mouseover', function (e) {
-    //     cursor.classList.add('cursor--hover');
-    //   });
-    //   link[i].addEventListener('mouseout', function (e) {
-    //     cursor.classList.remove('cursor--hover');
-    //   });
-    //   cursor.classList.remove('cursor--hover');
-    // }
     const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
     const mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
     const speed = 0.15;
@@ -57,11 +45,13 @@ const App = () => {
     });
 
     let mouseLock = false;
+  },[])
 
+  useLocationChange((location) => {
     document.querySelectorAll("a, .link").forEach((element) => {
       element.addEventListener("mouseenter", () => {
         const size = 15;
-        gsap.to(cursor, {
+        gsap.to("#cursor", {
           width:size * 2,
           height:size * 2,
           duration: 0.5,
@@ -71,7 +61,7 @@ const App = () => {
       });
       element.addEventListener("mouseleave", () => {
         const size = 15;
-        gsap.to(cursor, {
+        gsap.to("#cursor", {
           width: size,
           height: size,
           duration: 1,
