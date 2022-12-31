@@ -3,7 +3,8 @@ const Works = [
         id: "0",
         category: "movie",
         content: "images/image/aquarium.mp4",
-        thumb: "images/thumb/worksThumb1.webp",
+        thumb: "images/thumb/aquarium.webp",
+        spthumb: "images/spthumb/aquarium.webp",
         title: "Aquarium",
         lang: "ja",
         sentence: "「ぼくはままならない波の中を泳ぎたいんだ。」\n\n\
@@ -21,7 +22,8 @@ const Works = [
         id: "1",
         category: "movie",
         content: "images/image/time.mp4",
-        thumb: "images/thumb/worksThumb5.webp",
+        thumb: "images/thumb/time.webp",
+        spthumb: "images/spthumb/time.webp",
         title: "2001.12.11 - 2022.05.27",
         lang: "en",
         sentence: "This is my reel from 2001.12.11 to 2022.05.27.\n\
@@ -35,8 +37,9 @@ const Works = [
     {
         id: "2",
         category: "design",
-        content: "images/image/worksImage6.webp",
-        thumb: "images/thumb/worksThumb6.webp",
+        content: "images/image/wheel.webp",
+        thumb: "images/thumb/wheel.webp",
+        spthumb: "images/spthumb/wheel.webp",
         title: "The Wheel Of My Life",
         lang: "en",
         sentence: "This work was created in a class called art&religion. The assignment was to analyze, create, and present my wheel of life. The presentation is part of the work, so I have included the draft.\n\n\
@@ -57,8 +60,9 @@ const Works = [
     {
         id: "3",
         category: "web",
-        content: "images/thumb/worksThumb11.webp",
-        thumb: "images/thumb/worksThumb11.webp",
+        content: "images/thumb/sa.webp",
+        thumb: "images/thumb/sa.webp",
+        spthumb: "images/spthumb/sa.webp",
         title: "SA Exhibition.",
         sentence: "This is the site of an exhibition held as part of an English class.\n\
         In the design, talent was used as the motif, and a collage using each piece of artwork was used as the main visual. The design also evokes the future and creativity, as is typical of our university.",
@@ -70,6 +74,7 @@ const Works = [
         category: "movie",
         content: "images/image/yokohama.mp4",
         thumb: "images/thumb/yokohama.webp",
+        spthumb: "images/spthumb/yokohama.webp",
         title: "yokohamaPCclub.",
         lang: "en",
         sentence: "One time I created a project for a programming class that mentors give weekly lectures on their field of study. The purpose was to create new stimulation and motivation for the long-time attendees. This is the main visual I created for the occasion."
@@ -77,8 +82,9 @@ const Works = [
     {
         id: "5",
         category: "web",
-        content: "images/image/worksImage10.webp",
-        thumb: "images/thumb/worksThumb10.webp",
+        content: "images/image/otete.webp",
+        thumb: "images/thumb/otete.webp",
+        spthumb: "images/spthumb/otete.webp",
         title: "OteteSakka.",
         sentence: "Otetesakka is a creative experience event for children created by five people including myself. I am still a core member there and continue to work every day to give children as good an experience as possible.\n\n\
         I started the project 'Otekasakka' after participating in a business contest called 'Future Accelerator Gateway' held by Marui Group Inc. and my internship company, Life-Is-Tech Inc. I was mainly in charge of concept design. It is to create the plan, concept, and worldview of Otesakka. I was also in charge of design and website production.\n\n\
@@ -93,8 +99,9 @@ const Works = [
     {
         id: "6",
         category: "design",
-        content: "images/image/worksImage3.webp",
-        thumb: "images/thumb/worksThumb3.webp",
+        content: "images/image/future.webp",
+        thumb: "images/thumb/future.webp",
+        spthumb: "images/spthumb/future.webp",
         title: "future.",
         lang: "en",
         sentence: "I don't think about my future deeply. "
@@ -102,8 +109,9 @@ const Works = [
     {
         id: "7",
         category: "story",
-        content: "images/image/worksImage9.webp",
-        thumb: "images/thumb/worksThumb9.webp",
+        content: "images/image/bibli.webp",
+        thumb: "images/thumb/bibli.webp",
+        spthumb: "images/spthumb/bibli.webp",
         title: "Bibli.",
         sentence: "「ここはビブリ。この国にはなんでもある。星が沈むみずうみも、とけないこおりでできたおはなも、ほうせきがふるよるもある。でもたった1つ、ないものがある。それは、色。色だけがなくなってしまう国。」\n\n\
         子供向け創作体験イベントおててさっかにて、お話の作成とコンセプトアートを作成。色がなくなってしまう国を、純粋な心で色を描いていくお話。",
@@ -113,8 +121,9 @@ const Works = [
     {
         id: "8",
         category: "design",
-        content: "images/image/worksImage4.webp",
-        thumb: "images/thumb/worksThumb4.webp",
+        content: "images/image/witch.webp",
+        thumb: "images/thumb/witch.webp",
+        spthumb: "images/spthumb/witch.webp",
         title: "witch",
         lang: "en",
         sentence: "illustration"
@@ -124,6 +133,7 @@ const Works = [
         category: "movie",
         content: "images/image/overdose.mp4",
         thumb: "images/thumb/overdose.webp",
+        spthumb: "images/spthumb/overdose.webp",
         title: "overdose.",
         lang: "en",
         sentence: "I made a music video for a song called overdose. I created all the illustrations, video editing, and music myself."
@@ -131,8 +141,9 @@ const Works = [
     {
         id: "10",
         category: "web",
-        content: "images/thumb/worksThumb8.webp",
-        thumb: "images/thumb/worksThumb8.webp",
+        content: "images/thumb/manuka.webp",
+        thumb: "images/thumb/manuka.webp",
+        spthumb: "images/spthumb/manuka.webp",
         title: "hibi-to-mabuka.",
         sentence: "Created a website to introduce Manuka honey as a web design study.\n\
         The design was based on shapes in order to break away from the reliance on photographs.",
@@ -142,8 +153,9 @@ const Works = [
     {
         id: "11",
         category: "design",
-        content: "images/image/worksImage2.webp",
-        thumb: "images/thumb/worksThumb2.webp",
+        content: "images/image/hinode.webp",
+        thumb: "images/thumb/hinode.webp",
+        spthumb: "images/spthumb/hinode.webp",
         title: "night in the train.",
         lang: "en",
         sentence: "This is my first design piece and is my business card as a programming educator. The motif is a ticket, and the purpose of this work was to communicate what I value and to get people interested in learning more about me."
