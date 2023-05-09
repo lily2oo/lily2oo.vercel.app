@@ -59,6 +59,16 @@ const Works = [
     },
     {
         id: "3",
+        category: "movie",
+        content: "images/image/pamphlet.mp4",
+        thumb: "images/thumb/pamphlet.webp",
+        spthumb: "images/spthumb/pamphlet.webp",
+        title: "pamplet.",
+        lang: "en",
+        sentence: "I designed pamplet of Otetesakka. This is demo video."
+    },
+    {
+        id: "4",
         category: "web",
         content: "images/thumb/sa.webp",
         thumb: "images/thumb/sa.webp",
@@ -68,16 +78,6 @@ const Works = [
         In the design, talent was used as the motif, and a collage using each piece of artwork was used as the main visual. The design also evokes the future and creativity, as is typical of our university.",
         lang: "en",
         url: "https://sa-exhibition.com/"
-    },
-    {
-        id: "4",
-        category: "movie",
-        content: "images/image/yokohama.mp4",
-        thumb: "images/thumb/yokohama.webp",
-        spthumb: "images/spthumb/yokohama.webp",
-        title: "yokohamaPCclub.",
-        lang: "en",
-        sentence: "One time I created a project for a programming class that mentors give weekly lectures on their field of study. The purpose was to create new stimulation and motivation for the long-time attendees. This is the main visual I created for the occasion."
     },
     {
         id: "5",
@@ -160,7 +160,16 @@ const Works = [
         lang: "en",
         sentence: "This is my first design piece and is my business card as a programming educator. The motif is a ticket, and the purpose of this work was to communicate what I value and to get people interested in learning more about me."
     },
-    
+    {
+        id: "12",
+        category: "movie",
+        content: "images/image/yokohama.mp4",
+        thumb: "images/thumb/yokohama.webp",
+        spthumb: "images/spthumb/yokohama.webp",
+        title: "yokohamaPCclub.",
+        lang: "en",
+        sentence: "One time I created a project for a programming class that mentors give weekly lectures on their field of study. The purpose was to create new stimulation and motivation for the long-time attendees. This is the main visual I created for the occasion."
+    },
 ];
 
 export default Works
