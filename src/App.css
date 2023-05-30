@@ -46,19 +46,7 @@ a {
   mix-blend-mode: difference;
   z-index: 1000;
   pointer-events: none;
-  -webkit-animation: 8s infinite light ease;
-          animation: 8s infinite light ease;
-}
-@-webkit-keyframes light {
-  0% {
-    opacity: 50%;
-  }
-  50% {
-    opacity: 100%;
-  }
-  100% {
-    opacity: 50%;
-  }
+  animation: 8s infinite light ease;
 }
 @keyframes light {
   0% {
@@ -221,16 +209,7 @@ header nav ul li {
   top: -500px;
   right: -100px;
   z-index: 0;
-  -webkit-animation: infinite 100s rotate;
-          animation: infinite 100s rotate;
-}
-@-webkit-keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation: infinite 100s rotate;
 }
 @keyframes rotate {
   0% {
@@ -246,8 +225,7 @@ header nav ul li {
   left: -400px;
   z-index: 0;
   transform: scale(-1, -1);
-  -webkit-animation: infinite 100s rotate;
-          animation: infinite 100s rotate;
+  animation: infinite 100s rotate;
 }
 #works #works__wrap .works__inner {
   position: relative;
@@ -409,6 +387,9 @@ header nav ul li {
   letter-spacing: 0.1em;
   text-align: center;
   margin-bottom: 80px;
+}
+#worksDetail #worksDetail__sentence a {
+  color: #0E5E6F;
 }
 #worksDetail #worksDetail__link {
   padding: 2px;

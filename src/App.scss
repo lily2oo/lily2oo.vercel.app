@@ -434,7 +434,6 @@ header {
     #worksDetail__sentence {
         width: 90%;
         margin: 60px auto 30px;
-
         &.ja {
             font-size: 1.5rem;
             line-height: 2em;
@@ -450,7 +449,10 @@ header {
             text-align: center;
             margin-bottom: 80px;
         }
-
+        a{
+            color: $mainColor;
+            // text-decoration: none;
+        }
     }
 
 

@@ -1,22 +1,19 @@
 const Works = [
     {
         id: "0",
-        category: "movie",
-        content: "images/image/aquarium.mp4",
-        thumb: "images/thumb/aquarium.webp",
-        spthumb: "images/spthumb/aquarium.webp",
-        title: "Aquarium",
-        lang: "ja",
-        sentence: "「ぼくはままならない波の中を泳ぎたいんだ。」\n\n\
-        壁の外は危険にまみれている。それでも外へ行った彼の心情を私たちは測りかねていた。\n\n\
-        「ここは十分快適だよね。」「ご飯もあるし。」「寂しくもない。」「ここからでも外の世界は見えるし。」「彼は変わってるんだよ。」\n\n\
-        吐き出した言葉で少し不透明になった視界に、僕は少しの酩酊感を覚える。苦しくなって、僕は言った。\n\n\
-        「僕はもう寝るよ。」\n\n\
-        みんなから逃げるように、必死に尾びれを動かした。少し経って、後ろを振り返る。みんなはもう見えない。僕は溜め込んだ泡を吐き出した。僕のこの漠然とした恐怖は、誰にあてたものなんだろう。尾びれが水の壁を押しのけるたびに酔いが覚めて、気持ちがいい。気がつくと寝床はすぐそこまで来ていた。\n\n\
-        「今日はこのままもう少し泳ぎたいなあ。」\n\n\
-        自分の寝床におやすみの挨拶を言い残し、僕は彼がよく寝ていた岩陰に行くことにした。いつものようにそこにある彼の寝床は、がらんどうになった寂しさを漂わせている。僕は中に入って、石に頬をあてた。ひんやりして気持ちがいい。そのまま、まぶたを閉じるけれど、彼の言葉が頭の中をぐるぐる巡って、なかなか眠れない。\n\n\
-        「ぼくもいっしょにいけばよかった。」\n\n\
-        だれもいない岩陰の中に僕の声は木霊した。まぶたを開くと、壁の外を泳ぐ発光性のクラゲがこちらを見つめていた。"
+        category: "web",
+        content: "images/image/otete.webp",
+        thumb: "images/thumb/otete.webp",
+        spthumb: "images/spthumb/otete.webp",
+        title: "OteteSakka.",
+        sentence: "Otetesakka is a creative experience event for children created by five people including myself. I am still a core member there and continue to work every day to give children as good an experience as possible.\n\n\
+        I started the project 'Otekasakka' after participating in a business contest called 'Future Accelerator Gateway' held by Marui Group Inc. and my internship company, Life-Is-Tech Inc. I was mainly in charge of concept design. It is to create the plan, concept, and worldview of Otesakka. I was also in charge of design and website production.\n\n\
+        If you want to know more about Otetesakka, please visit our website.\n\n\n\n\
+        おててさっかとは、私を含め、友人と5人で立ち上げた、子供向け創作体験イベントです。私はおててさっかの基幹メンバーとして、子供たちに少しでも良い体験を与えられるように日々活動を続けています。\n\n\
+        株式会社丸井グループ、また自分のインターン先であるライフイズテック株式会社が開催する『Future Accelerator Gateway』というビジネスコンテストに参加したことをきっかけに、プロジェクト「おててさっか」は始まりました。私は主に、コンセプトデザインを担当しています。おててさっかの企画やコンセプト、世界観を作る役割です。また、デザインやWebサイト制作、広報も担当しています。\n\n\
+        おててさっかの概要をもっと知りたい方は、webサイトをご覧ください。",
+        lang: "en",
+        url: "https://corp.otetesakka.com/"
     },
     {
         id: "1",
@@ -81,20 +78,22 @@ const Works = [
     },
     {
         id: "5",
-        category: "web",
-        content: "images/image/otete.webp",
-        thumb: "images/thumb/otete.webp",
-        spthumb: "images/spthumb/otete.webp",
-        title: "OteteSakka.",
-        sentence: "Otetesakka is a creative experience event for children created by five people including myself. I am still a core member there and continue to work every day to give children as good an experience as possible.\n\n\
-        I started the project 'Otekasakka' after participating in a business contest called 'Future Accelerator Gateway' held by Marui Group Inc. and my internship company, Life-Is-Tech Inc. I was mainly in charge of concept design. It is to create the plan, concept, and worldview of Otesakka. I was also in charge of design and website production.\n\n\
-        If you want to know more about Otetesakka, please visit our website.\n\n\n\n\
-        おててさっかとは、私を含め5人で制作した、子供に向けた創作体験イベントです。今も私はおててさっかの基幹メンバーとして、子供に少しでも良い体験を与えられるように日々活動を続けています。\n\n\
-        最初は株式会社丸井グループ、また自分のインターン先であるライフイズテック株式会社が開催する『Future Accelerator Gateway』というビジネスコンテストに参加したことをきっかけに、プロジェクト「おててさっか」を立ち上げました。私は主に、コンセプトデザインを担当していました。おててさっかの企画やコンセプト、世界観を作ることです。また、デザインやWebサイト制作も担当していました。\n\n\
-        おててさっかの概要をもっと知りたい方は、webサイトをご覧ください。\n\n\
-        https://corp.otetesakka.com/",
-        lang: "en",
-        url: "https://corp.otetesakka.com/"
+        category: "movie",
+        content: "images/image/aquarium.mp4",
+        thumb: "images/thumb/aquarium.webp",
+        spthumb: "images/spthumb/aquarium.webp",
+        title: "Aquarium",
+        lang: "ja",
+        sentence: "「ぼくはままならない波の中を泳ぎたいんだ。」\n\n\
+        壁の外は危険にまみれている。それでも外へ行った彼の心情を私たちは測りかねていた。\n\n\
+        「ここは十分快適だよね。」「ご飯もあるし。」「寂しくもない。」「ここからでも外の世界は見えるし。」「彼は変わってるんだよ。」\n\n\
+        吐き出した言葉で少し不透明になった視界に、僕は少しの酩酊感を覚える。苦しくなって、僕は言った。\n\n\
+        「僕はもう寝るよ。」\n\n\
+        みんなから逃げるように、必死に尾びれを動かした。少し経って、後ろを振り返る。みんなはもう見えない。僕は溜め込んだ泡を吐き出した。僕のこの漠然とした恐怖は、誰にあてたものなんだろう。尾びれが水の壁を押しのけるたびに酔いが覚めて、気持ちがいい。気がつくと寝床はすぐそこまで来ていた。\n\n\
+        「今日はこのままもう少し泳ぎたいなあ。」\n\n\
+        自分の寝床におやすみの挨拶を言い残し、僕は彼がよく寝ていた岩陰に行くことにした。いつものようにそこにある彼の寝床は、がらんどうになった寂しさを漂わせている。僕は中に入って、石に頬をあてた。ひんやりして気持ちがいい。そのまま、まぶたを閉じるけれど、彼の言葉が頭の中をぐるぐる巡って、なかなか眠れない。\n\n\
+        「ぼくもいっしょにいけばよかった。」\n\n\
+        だれもいない岩陰の中に僕の声は木霊した。まぶたを開くと、壁の外を泳ぐ発光性のクラゲがこちらを見つめていた。"
     },
     {
         id: "6",
