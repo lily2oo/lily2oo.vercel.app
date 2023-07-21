@@ -10,7 +10,8 @@ const Works = [
         I started the project 'Otekasakka' after participating in a business contest called 'Future Accelerator Gateway' held by Marui Group Inc. and my internship company, Life-Is-Tech Inc. I was mainly in charge of concept design. It is to create the plan, concept, and worldview of Otesakka. I was also in charge of design and website production.\n\n\
         If you want to know more about Otetesakka, please visit our website.\n\n\n\n\
         おててさっかとは、私を含め、友人と5人で立ち上げた、子供向け創作体験イベントです。私はおててさっかの基幹メンバーとして、子供たちに少しでも良い体験を与えられるように日々活動を続けています。\n\n\
-        株式会社丸井グループ、また自分のインターン先であるライフイズテック株式会社が開催する『Future Accelerator Gateway』というビジネスコンテストに参加したことをきっかけに、プロジェクト「おててさっか」は始まりました。私は主に、コンセプトデザインを担当しています。おててさっかの企画やコンセプト、世界観を作る役割です。また、デザインやWebサイト制作、広報も担当しています。\n\n\
+        株式会社丸井グループ、また自分のインターン先であるライフイズテック株式会社が開催する『Future Accelerator Gateway』というビジネスコンテストに参加したことをきっかけに、プロジェクト「おててさっか」は始まりました。\n\n\
+        私は主に、コンセプトデザインを担当しています。おててさっかの企画やコンセプト、世界観を作る役割です。また、デザインやWebサイト制作、広報等のBXデザイン領域を幅広く担当しています。\n\n\
         おててさっかの概要をもっと知りたい方は、webサイトをご覧ください。",
         lang: "en",
         url: "https://corp.otetesakka.com/"
