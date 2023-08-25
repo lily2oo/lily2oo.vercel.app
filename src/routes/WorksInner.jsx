@@ -12,8 +12,8 @@ const WorksInner = ({ item }) => {
   }
   return (
     <>
-      <img className="works__decoration" src="/images/gear.png" alt="" />
-      <img className="works__decoration" src="/images/gear.png" alt="" />
+      {/* <img className="works__decoration" src="/images/gear.png" alt="" />
+      <img className="works__decoration" src="/images/gear.png" alt="" /> */}
       {item.map((Val) => {
         return (
           <div key={Val.id} className='works__inner'>

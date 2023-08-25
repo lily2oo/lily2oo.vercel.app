@@ -160,7 +160,7 @@ header nav ul li {
 /* Works */
 #works {
   position: relative;
-  margin: 48vh 0;
+  margin: 35vh 0;
 }
 #works #worksFilter {
   position: fixed;
@@ -567,7 +567,7 @@ header nav ul li {
     left: 0;
   }
   #works {
-    margin: 50vh 0;
+    margin: 35vh 0;
   }
   #works #worksFilter {
     top: 20vh;
